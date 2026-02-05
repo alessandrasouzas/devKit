@@ -1,4 +1,4 @@
-package com.ale.devkit.lab.integrations.viaCep.client
+package com.ale.devkit.lab.integrations.share.adapter
 
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
