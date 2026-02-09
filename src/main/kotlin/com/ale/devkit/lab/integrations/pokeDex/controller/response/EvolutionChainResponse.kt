@@ -19,12 +19,3 @@ data class Species(
     @JsonProperty("name")
     val name: String
 )
-
-data class PokemonSpeciesResponse(
-    @JsonProperty("evolution_chain")
-    val evolutionChain: EvolutionChainUrl
-)
-
-data class EvolutionChainUrl(
-    val url: String
-)

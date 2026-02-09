@@ -35,6 +35,10 @@ fun PokeDexIntegrationResponse.toPokemon(): PokemonResponse {
             ?.take(10)
             ?.map { it.move.name }
             .orEmpty(),
-        speciesName = name.lowercase()
+        speciesName = name.lowercase(),
+        categoria = null,
+        habitat = null,
+        lendario = null,
+        mitico = null
     )
 }

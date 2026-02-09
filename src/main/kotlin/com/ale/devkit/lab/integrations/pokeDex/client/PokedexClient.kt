@@ -91,45 +91,22 @@ class PokedexClient (
         }
     }
 
-    fun buscarEvolucaoPorPokemon(nome: String): EvolutionChainResponse {
-        val species = buscarSpecies(nome)
-
-        val evolutionChainId = species.evolutionChain.url
-            .trimEnd('/')
-            .substringAfterLast('/')
-            .toInt()
-
-        return buscarEvolutionChain(evolutionChainId)
-    }
-
-
     fun buscarSpecies(nome: String): PokemonSpeciesResponse {
         val request = Request.Builder()
             .url("$pokedexEspeciesUrl/$nome")
+            .get()
             .build()
 
-        try {
-            okHttpClient.newCall(request).execute().use { response ->
-                if (!response.isSuccessful) {
-                    throw Exception(
-                        "Erro ao chamar pokedex. HTTP status: ${response.code}"
-                    )
-                }
-
-                val responseBody = response.body?.string()
-                    ?: throw Exception(
-                        "Resposta do pokedex sem corpo"
-                    )
-
-                val response = objectMapper.readValue(responseBody, PokemonSpeciesResponse::class.java)
-
-                return response
+        okHttpClient.newCall(request).execute().use { response ->
+            if (!response.isSuccessful) {
+                throw Exception("Erro ao buscar species: ${response.code}")
             }
-        }catch (ex: Exception) {
-            throw Exception(
-                "Falha ao integrar com a pokedex",
-                ex
-            )
+
+            val body = response.body?.string()
+                ?: throw Exception("Species sem corpo")
+
+            return objectMapper.readValue(body, PokemonSpeciesResponse::class.java)
         }
     }
+
 }
