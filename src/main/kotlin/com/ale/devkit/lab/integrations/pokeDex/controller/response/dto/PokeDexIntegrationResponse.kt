@@ -24,17 +24,17 @@ data class PokeDexIntegrationResponse (
     val moves: List<PokemonMoves>
 )
 
-fun PokeDexIntegrationResponse.toDomain(): PokemonResponse {
+fun PokeDexIntegrationResponse.toPokemon(): PokemonResponse {
     return PokemonResponse(
-        nome = name,
         tipos = types?.map { it.type.name }.orEmpty(),
         peso = weight.toIntOrNull(),
         altura = height.toIntOrNull(),
         habilidades = abilities?.map { it.ability.name }.orEmpty(),
-        identificacao = id.toIntOrNull(),
+        identificacao = id.toInt(),
         movimentos = moves
             ?.take(10)
             ?.map { it.move.name }
-            .orEmpty()
+            .orEmpty(),
+        speciesName = name.lowercase()
     )
 }
