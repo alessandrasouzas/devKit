@@ -1,4 +1,4 @@
-package com.ale.devkit.lab.integrations.pokeDex.controller.response.mapper
+package com.ale.devkit.lab.integrations.pokeDex.controller.mapper
 
 import com.ale.devkit.lab.integrations.pokeDex.controller.dto.PokemonResponse
 import com.ale.devkit.lab.integrations.pokeDex.controller.response.PokemonSpeciesResponse

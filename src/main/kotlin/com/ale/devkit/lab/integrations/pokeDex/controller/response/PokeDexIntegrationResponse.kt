@@ -1,4 +1,4 @@
-package com.ale.devkit.lab.integrations.pokeDex.controller.response.dto
+package com.ale.devkit.lab.integrations.pokeDex.controller.response
 
 import com.ale.devkit.lab.integrations.pokeDex.controller.dto.PokemonResponse
 import com.ale.devkit.lab.integrations.pokeDex.domain.PokemonAbilities

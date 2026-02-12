@@ -1,10 +1,10 @@
 package com.ale.devkit.lab.integrations.pokeDex.useCase
 
 import com.ale.devkit.lab.integrations.pokeDex.client.PokedexClient
-import com.ale.devkit.lab.integrations.pokeDex.controller.response.PokemonResponse
+import com.ale.devkit.lab.integrations.pokeDex.controller.dto.PokemonResponse
 import com.ale.devkit.lab.integrations.pokeDex.controller.response.dto.toPokemon
-import com.ale.devkit.lab.integrations.pokeDex.controller.response.mapper.applyTo
-import com.ale.devkit.lab.integrations.pokeDex.controller.response.mapper.toEvolutionsFrom
+import com.ale.devkit.lab.integrations.pokeDex.controller.mapper.applyTo
+import com.ale.devkit.lab.integrations.pokeDex.controller.mapper.toEvolutionsFrom
 import org.springframework.stereotype.Service
 
 @Service
