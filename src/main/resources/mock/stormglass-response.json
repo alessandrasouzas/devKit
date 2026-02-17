@@ -1,0 +1,5349 @@
+{
+  "hours": [
+    {
+      "airTemperature": {
+        "ecmwf": 25.76,
+        "ecmwf:aifs": 24.1,
+        "noaa": 25.33,
+        "sg": 25.76
+      },
+      "cloudCover": {
+        "noaa": 7.8,
+        "sg": 7.8
+      },
+      "humidity": {
+        "noaa": 71.9,
+        "sg": 71.9
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.0,
+        "noaa": 0.08,
+        "sg": 0.0
+      },
+      "time": "2026-02-17T00:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 25.21,
+        "ecmwf:aifs": 23.7,
+        "noaa": 24.68,
+        "sg": 25.21
+      },
+      "cloudCover": {
+        "noaa": 5.2,
+        "sg": 5.2
+      },
+      "humidity": {
+        "noaa": 73.57,
+        "sg": 73.57
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.0,
+        "noaa": 0.07,
+        "sg": 0.0
+      },
+      "time": "2026-02-17T01:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 24.65,
+        "ecmwf:aifs": 23.3,
+        "noaa": 24.03,
+        "sg": 24.65
+      },
+      "cloudCover": {
+        "noaa": 2.6,
+        "sg": 2.6
+      },
+      "humidity": {
+        "noaa": 75.23,
+        "sg": 75.23
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.0,
+        "noaa": 0.05,
+        "sg": 0.0
+      },
+      "time": "2026-02-17T02:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 24.09,
+        "ecmwf:aifs": 22.89,
+        "noaa": 23.38,
+        "sg": 24.09
+      },
+      "cloudCover": {
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "humidity": {
+        "noaa": 76.9,
+        "sg": 76.9
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.0,
+        "noaa": 0.03,
+        "sg": 0.0
+      },
+      "time": "2026-02-17T03:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 23.55,
+        "ecmwf:aifs": 22.49,
+        "noaa": 22.91,
+        "sg": 23.55
+      },
+      "cloudCover": {
+        "noaa": 1.67,
+        "sg": 1.67
+      },
+      "humidity": {
+        "noaa": 78.23,
+        "sg": 78.23
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.0,
+        "noaa": 0.02,
+        "sg": 0.0
+      },
+      "time": "2026-02-17T04:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 23.01,
+        "ecmwf:aifs": 22.09,
+        "noaa": 22.43,
+        "sg": 23.01
+      },
+      "cloudCover": {
+        "noaa": 3.33,
+        "sg": 3.33
+      },
+      "humidity": {
+        "noaa": 79.57,
+        "sg": 79.57
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.0,
+        "noaa": 0.02,
+        "sg": 0.0
+      },
+      "time": "2026-02-17T05:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 22.47,
+        "ecmwf:aifs": 21.69,
+        "noaa": 21.96,
+        "sg": 22.47
+      },
+      "cloudCover": {
+        "noaa": 5.0,
+        "sg": 5.0
+      },
+      "humidity": {
+        "noaa": 80.9,
+        "sg": 80.9
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.0,
+        "noaa": 0.01,
+        "sg": 0.0
+      },
+      "time": "2026-02-17T06:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 21.88,
+        "ecmwf:aifs": 22.56,
+        "noaa": 21.69,
+        "sg": 21.88
+      },
+      "cloudCover": {
+        "noaa": 4.77,
+        "sg": 4.77
+      },
+      "humidity": {
+        "noaa": 80.93,
+        "sg": 80.93
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.0,
+        "noaa": 0.01,
+        "sg": 0.0
+      },
+      "time": "2026-02-17T07:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 21.29,
+        "ecmwf:aifs": 23.43,
+        "noaa": 21.41,
+        "sg": 21.29
+      },
+      "cloudCover": {
+        "noaa": 4.53,
+        "sg": 4.53
+      },
+      "humidity": {
+        "noaa": 80.97,
+        "sg": 80.97
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.0,
+        "noaa": 0.01,
+        "sg": 0.0
+      },
+      "time": "2026-02-17T08:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 20.7,
+        "ecmwf:aifs": 24.29,
+        "noaa": 21.14,
+        "sg": 20.7
+      },
+      "cloudCover": {
+        "noaa": 4.3,
+        "sg": 4.3
+      },
+      "humidity": {
+        "noaa": 81.0,
+        "sg": 81.0
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.0,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-17T09:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 20.64,
+        "ecmwf:aifs": 25.16,
+        "noaa": 22.96,
+        "sg": 20.64
+      },
+      "cloudCover": {
+        "noaa": 7.03,
+        "sg": 7.03
+      },
+      "humidity": {
+        "noaa": 73.23,
+        "sg": 73.23
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.0,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-17T10:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 20.58,
+        "ecmwf:aifs": 26.03,
+        "noaa": 24.77,
+        "sg": 20.58
+      },
+      "cloudCover": {
+        "noaa": 9.77,
+        "sg": 9.77
+      },
+      "humidity": {
+        "noaa": 65.47,
+        "sg": 65.47
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.0,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-17T11:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 20.52,
+        "ecmwf:aifs": 26.9,
+        "noaa": 26.59,
+        "sg": 20.52
+      },
+      "cloudCover": {
+        "noaa": 12.5,
+        "sg": 12.5
+      },
+      "humidity": {
+        "noaa": 57.7,
+        "sg": 57.7
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.0,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-17T12:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 23.02,
+        "ecmwf:aifs": 27.27,
+        "noaa": 28.34,
+        "sg": 23.02
+      },
+      "cloudCover": {
+        "noaa": 29.17,
+        "sg": 29.17
+      },
+      "humidity": {
+        "noaa": 50.6,
+        "sg": 50.6
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.06,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-17T13:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 25.52,
+        "ecmwf:aifs": 27.63,
+        "noaa": 30.1,
+        "sg": 25.52
+      },
+      "cloudCover": {
+        "noaa": 45.83,
+        "sg": 45.83
+      },
+      "humidity": {
+        "noaa": 43.5,
+        "sg": 43.5
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.12,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-17T14:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 28.01,
+        "ecmwf:aifs": 27.99,
+        "noaa": 31.85,
+        "sg": 28.01
+      },
+      "cloudCover": {
+        "noaa": 62.5,
+        "sg": 62.5
+      },
+      "humidity": {
+        "noaa": 36.4,
+        "sg": 36.4
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.18,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-17T15:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 28.86,
+        "ecmwf:aifs": 28.36,
+        "noaa": 31.6,
+        "sg": 28.86
+      },
+      "cloudCover": {
+        "noaa": 74.9,
+        "sg": 74.9
+      },
+      "humidity": {
+        "noaa": 37.57,
+        "sg": 37.57
+      },
+      "precipitation": {
+        "ecmwf": 0.42,
+        "ecmwf:aifs": 0.24,
+        "noaa": 0.0,
+        "sg": 0.42
+      },
+      "time": "2026-02-17T16:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 29.7,
+        "ecmwf:aifs": 28.72,
+        "noaa": 31.35,
+        "sg": 29.7
+      },
+      "cloudCover": {
+        "noaa": 87.3,
+        "sg": 87.3
+      },
+      "humidity": {
+        "noaa": 38.73,
+        "sg": 38.73
+      },
+      "precipitation": {
+        "ecmwf": 0.83,
+        "ecmwf:aifs": 0.3,
+        "noaa": 0.0,
+        "sg": 0.83
+      },
+      "time": "2026-02-17T17:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 30.54,
+        "ecmwf:aifs": 29.09,
+        "noaa": 31.1,
+        "sg": 30.54
+      },
+      "cloudCover": {
+        "noaa": 99.7,
+        "sg": 99.7
+      },
+      "humidity": {
+        "noaa": 39.9,
+        "sg": 39.9
+      },
+      "precipitation": {
+        "ecmwf": 1.25,
+        "ecmwf:aifs": 0.36,
+        "noaa": 0.01,
+        "sg": 1.25
+      },
+      "time": "2026-02-17T18:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 28.23,
+        "ecmwf:aifs": 28.0,
+        "noaa": 30.21,
+        "sg": 28.23
+      },
+      "cloudCover": {
+        "noaa": 73.43,
+        "sg": 73.43
+      },
+      "humidity": {
+        "noaa": 44.33,
+        "sg": 44.33
+      },
+      "precipitation": {
+        "ecmwf": 1.88,
+        "ecmwf:aifs": 0.37,
+        "noaa": 0.08,
+        "sg": 1.88
+      },
+      "time": "2026-02-17T19:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 25.92,
+        "ecmwf:aifs": 26.91,
+        "noaa": 29.32,
+        "sg": 25.92
+      },
+      "cloudCover": {
+        "noaa": 47.17,
+        "sg": 47.17
+      },
+      "humidity": {
+        "noaa": 48.77,
+        "sg": 48.77
+      },
+      "precipitation": {
+        "ecmwf": 2.5,
+        "ecmwf:aifs": 0.38,
+        "noaa": 0.16,
+        "sg": 2.5
+      },
+      "time": "2026-02-17T20:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 23.61,
+        "ecmwf:aifs": 25.82,
+        "noaa": 28.43,
+        "sg": 23.61
+      },
+      "cloudCover": {
+        "noaa": 20.9,
+        "sg": 20.9
+      },
+      "humidity": {
+        "noaa": 53.2,
+        "sg": 53.2
+      },
+      "precipitation": {
+        "ecmwf": 3.12,
+        "ecmwf:aifs": 0.39,
+        "noaa": 0.23,
+        "sg": 3.12
+      },
+      "time": "2026-02-17T21:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 22.73,
+        "ecmwf:aifs": 24.73,
+        "noaa": 26.34,
+        "sg": 22.73
+      },
+      "cloudCover": {
+        "noaa": 14.47,
+        "sg": 14.47
+      },
+      "humidity": {
+        "noaa": 64.43,
+        "sg": 64.43
+      },
+      "precipitation": {
+        "ecmwf": 2.55,
+        "ecmwf:aifs": 0.4,
+        "noaa": 0.33,
+        "sg": 2.55
+      },
+      "time": "2026-02-17T22:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 21.85,
+        "ecmwf:aifs": 23.64,
+        "noaa": 24.24,
+        "sg": 21.85
+      },
+      "cloudCover": {
+        "noaa": 8.03,
+        "sg": 8.03
+      },
+      "humidity": {
+        "noaa": 75.67,
+        "sg": 75.67
+      },
+      "precipitation": {
+        "ecmwf": 1.97,
+        "ecmwf:aifs": 0.41,
+        "noaa": 0.43,
+        "sg": 1.97
+      },
+      "time": "2026-02-17T23:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 20.97,
+        "ecmwf:aifs": 22.55,
+        "noaa": 22.14,
+        "sg": 20.97
+      },
+      "cloudCover": {
+        "noaa": 1.6,
+        "sg": 1.6
+      },
+      "humidity": {
+        "noaa": 86.9,
+        "sg": 86.9
+      },
+      "precipitation": {
+        "ecmwf": 1.39,
+        "ecmwf:aifs": 0.42,
+        "noaa": 0.54,
+        "sg": 1.39
+      },
+      "time": "2026-02-18T00:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 20.82,
+        "ecmwf:aifs": 22.19,
+        "noaa": 21.72,
+        "sg": 20.82
+      },
+      "cloudCover": {
+        "noaa": 34.4,
+        "sg": 34.4
+      },
+      "humidity": {
+        "noaa": 88.37,
+        "sg": 88.37
+      },
+      "precipitation": {
+        "ecmwf": 1.1,
+        "ecmwf:aifs": 0.4,
+        "noaa": 0.69,
+        "sg": 1.1
+      },
+      "time": "2026-02-18T01:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 20.67,
+        "ecmwf:aifs": 21.83,
+        "noaa": 21.3,
+        "sg": 20.67
+      },
+      "cloudCover": {
+        "noaa": 67.2,
+        "sg": 67.2
+      },
+      "humidity": {
+        "noaa": 89.83,
+        "sg": 89.83
+      },
+      "precipitation": {
+        "ecmwf": 0.8,
+        "ecmwf:aifs": 0.38,
+        "noaa": 0.85,
+        "sg": 0.8
+      },
+      "time": "2026-02-18T02:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 20.52,
+        "ecmwf:aifs": 21.47,
+        "noaa": 20.89,
+        "sg": 20.52
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 91.3,
+        "sg": 91.3
+      },
+      "precipitation": {
+        "ecmwf": 0.51,
+        "ecmwf:aifs": 0.36,
+        "noaa": 1.01,
+        "sg": 0.51
+      },
+      "time": "2026-02-18T03:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 20.32,
+        "ecmwf:aifs": 21.1,
+        "noaa": 20.84,
+        "sg": 20.32
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 91.83,
+        "sg": 91.83
+      },
+      "precipitation": {
+        "ecmwf": 0.35,
+        "ecmwf:aifs": 0.35,
+        "noaa": 0.95,
+        "sg": 0.35
+      },
+      "time": "2026-02-18T04:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 20.12,
+        "ecmwf:aifs": 20.74,
+        "noaa": 20.8,
+        "sg": 20.12
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 92.37,
+        "sg": 92.37
+      },
+      "precipitation": {
+        "ecmwf": 0.19,
+        "ecmwf:aifs": 0.33,
+        "noaa": 0.89,
+        "sg": 0.19
+      },
+      "time": "2026-02-18T05:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 19.91,
+        "ecmwf:aifs": 20.38,
+        "noaa": 20.76,
+        "sg": 19.91
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 92.9,
+        "sg": 92.9
+      },
+      "precipitation": {
+        "ecmwf": 0.04,
+        "ecmwf:aifs": 0.31,
+        "noaa": 0.83,
+        "sg": 0.04
+      },
+      "time": "2026-02-18T06:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 19.79,
+        "ecmwf:aifs": 21.01,
+        "noaa": 20.55,
+        "sg": 19.79
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 93.37,
+        "sg": 93.37
+      },
+      "precipitation": {
+        "ecmwf": 0.02,
+        "ecmwf:aifs": 0.27,
+        "noaa": 0.56,
+        "sg": 0.02
+      },
+      "time": "2026-02-18T07:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 19.66,
+        "ecmwf:aifs": 21.64,
+        "noaa": 20.33,
+        "sg": 19.66
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 93.83,
+        "sg": 93.83
+      },
+      "precipitation": {
+        "ecmwf": 0.01,
+        "ecmwf:aifs": 0.22,
+        "noaa": 0.28,
+        "sg": 0.01
+      },
+      "time": "2026-02-18T08:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 19.53,
+        "ecmwf:aifs": 22.28,
+        "noaa": 20.12,
+        "sg": 19.53
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 94.3,
+        "sg": 94.3
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.18,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-18T09:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 19.53,
+        "ecmwf:aifs": 22.91,
+        "noaa": 21.14,
+        "sg": 19.53
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 88.83,
+        "sg": 88.83
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.14,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-18T10:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 19.52,
+        "ecmwf:aifs": 23.54,
+        "noaa": 22.16,
+        "sg": 19.52
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 83.37,
+        "sg": 83.37
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.09,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-18T11:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 19.51,
+        "ecmwf:aifs": 24.17,
+        "noaa": 23.19,
+        "sg": 19.51
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 77.9,
+        "sg": 77.9
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.05,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-18T12:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 21.09,
+        "ecmwf:aifs": 24.66,
+        "noaa": 23.18,
+        "sg": 21.09
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 79.93,
+        "sg": 79.93
+      },
+      "precipitation": {
+        "ecmwf": 0.1,
+        "ecmwf:aifs": 0.13,
+        "noaa": 0.25,
+        "sg": 0.1
+      },
+      "time": "2026-02-18T13:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 22.66,
+        "ecmwf:aifs": 25.15,
+        "noaa": 23.18,
+        "sg": 22.66
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 81.97,
+        "sg": 81.97
+      },
+      "precipitation": {
+        "ecmwf": 0.21,
+        "ecmwf:aifs": 0.22,
+        "noaa": 0.49,
+        "sg": 0.21
+      },
+      "time": "2026-02-18T14:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 24.23,
+        "ecmwf:aifs": 25.64,
+        "noaa": 23.17,
+        "sg": 24.23
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 84.0,
+        "sg": 84.0
+      },
+      "precipitation": {
+        "ecmwf": 0.31,
+        "ecmwf:aifs": 0.3,
+        "noaa": 0.74,
+        "sg": 0.31
+      },
+      "time": "2026-02-18T15:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 24.55,
+        "ecmwf:aifs": 26.13,
+        "noaa": 23.02,
+        "sg": 24.55
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 84.53,
+        "sg": 84.53
+      },
+      "precipitation": {
+        "ecmwf": 0.77,
+        "ecmwf:aifs": 0.39,
+        "noaa": 0.66,
+        "sg": 0.77
+      },
+      "time": "2026-02-18T16:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 24.86,
+        "ecmwf:aifs": 26.63,
+        "noaa": 22.87,
+        "sg": 24.86
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 85.07,
+        "sg": 85.07
+      },
+      "precipitation": {
+        "ecmwf": 1.22,
+        "ecmwf:aifs": 0.47,
+        "noaa": 0.58,
+        "sg": 1.22
+      },
+      "time": "2026-02-18T17:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 25.18,
+        "ecmwf:aifs": 27.12,
+        "noaa": 22.73,
+        "sg": 25.18
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 85.6,
+        "sg": 85.6
+      },
+      "precipitation": {
+        "ecmwf": 1.68,
+        "ecmwf:aifs": 0.56,
+        "noaa": 0.49,
+        "sg": 1.68
+      },
+      "time": "2026-02-18T18:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 24.74,
+        "ecmwf:aifs": 26.25,
+        "noaa": 22.73,
+        "sg": 24.74
+      },
+      "cloudCover": {
+        "noaa": 82.73,
+        "sg": 82.73
+      },
+      "humidity": {
+        "noaa": 84.43,
+        "sg": 84.43
+      },
+      "precipitation": {
+        "ecmwf": 1.18,
+        "ecmwf:aifs": 0.53,
+        "noaa": 0.34,
+        "sg": 1.18
+      },
+      "time": "2026-02-18T19:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 24.3,
+        "ecmwf:aifs": 25.39,
+        "noaa": 22.74,
+        "sg": 24.3
+      },
+      "cloudCover": {
+        "noaa": 65.47,
+        "sg": 65.47
+      },
+      "humidity": {
+        "noaa": 83.27,
+        "sg": 83.27
+      },
+      "precipitation": {
+        "ecmwf": 0.68,
+        "ecmwf:aifs": 0.5,
+        "noaa": 0.18,
+        "sg": 0.68
+      },
+      "time": "2026-02-18T20:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 23.87,
+        "ecmwf:aifs": 24.53,
+        "noaa": 22.75,
+        "sg": 23.87
+      },
+      "cloudCover": {
+        "noaa": 48.2,
+        "sg": 48.2
+      },
+      "humidity": {
+        "noaa": 82.1,
+        "sg": 82.1
+      },
+      "precipitation": {
+        "ecmwf": 0.18,
+        "ecmwf:aifs": 0.47,
+        "noaa": 0.03,
+        "sg": 0.18
+      },
+      "time": "2026-02-18T21:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 23.29,
+        "ecmwf:aifs": 23.67,
+        "noaa": 22.26,
+        "sg": 23.29
+      },
+      "cloudCover": {
+        "noaa": 33.8,
+        "sg": 33.8
+      },
+      "humidity": {
+        "noaa": 83.77,
+        "sg": 83.77
+      },
+      "precipitation": {
+        "ecmwf": 0.15,
+        "ecmwf:aifs": 0.44,
+        "noaa": 0.03,
+        "sg": 0.15
+      },
+      "time": "2026-02-18T22:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 22.71,
+        "ecmwf:aifs": 22.8,
+        "noaa": 21.78,
+        "sg": 22.71
+      },
+      "cloudCover": {
+        "noaa": 19.4,
+        "sg": 19.4
+      },
+      "humidity": {
+        "noaa": 85.43,
+        "sg": 85.43
+      },
+      "precipitation": {
+        "ecmwf": 0.12,
+        "ecmwf:aifs": 0.41,
+        "noaa": 0.04,
+        "sg": 0.12
+      },
+      "time": "2026-02-18T23:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 22.13,
+        "ecmwf:aifs": 21.94,
+        "noaa": 21.29,
+        "sg": 22.13
+      },
+      "cloudCover": {
+        "noaa": 5.0,
+        "sg": 5.0
+      },
+      "humidity": {
+        "noaa": 87.1,
+        "sg": 87.1
+      },
+      "precipitation": {
+        "ecmwf": 0.09,
+        "ecmwf:aifs": 0.38,
+        "noaa": 0.04,
+        "sg": 0.09
+      },
+      "time": "2026-02-19T00:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 21.57,
+        "ecmwf:aifs": 21.63,
+        "noaa": 20.95,
+        "sg": 21.57
+      },
+      "cloudCover": {
+        "noaa": 5.0,
+        "sg": 5.0
+      },
+      "humidity": {
+        "noaa": 88.47,
+        "sg": 88.47
+      },
+      "precipitation": {
+        "ecmwf": 0.13,
+        "ecmwf:aifs": 0.33,
+        "noaa": 0.04,
+        "sg": 0.13
+      },
+      "time": "2026-02-19T01:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 21.01,
+        "ecmwf:aifs": 21.33,
+        "noaa": 20.6,
+        "sg": 21.01
+      },
+      "cloudCover": {
+        "noaa": 5.0,
+        "sg": 5.0
+      },
+      "humidity": {
+        "noaa": 89.83,
+        "sg": 89.83
+      },
+      "precipitation": {
+        "ecmwf": 0.17,
+        "ecmwf:aifs": 0.28,
+        "noaa": 0.04,
+        "sg": 0.17
+      },
+      "time": "2026-02-19T02:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 20.45,
+        "ecmwf:aifs": 21.02,
+        "noaa": 20.26,
+        "sg": 20.45
+      },
+      "cloudCover": {
+        "noaa": 5.0,
+        "sg": 5.0
+      },
+      "humidity": {
+        "noaa": 91.2,
+        "sg": 91.2
+      },
+      "precipitation": {
+        "ecmwf": 0.2,
+        "ecmwf:aifs": 0.23,
+        "noaa": 0.04,
+        "sg": 0.2
+      },
+      "time": "2026-02-19T03:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 20.46,
+        "ecmwf:aifs": 20.71,
+        "noaa": 20.09,
+        "sg": 20.46
+      },
+      "cloudCover": {
+        "noaa": 4.97,
+        "sg": 4.97
+      },
+      "humidity": {
+        "noaa": 91.9,
+        "sg": 91.9
+      },
+      "precipitation": {
+        "ecmwf": 0.19,
+        "ecmwf:aifs": 0.18,
+        "noaa": 0.03,
+        "sg": 0.19
+      },
+      "time": "2026-02-19T04:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 20.47,
+        "ecmwf:aifs": 20.41,
+        "noaa": 19.92,
+        "sg": 20.47
+      },
+      "cloudCover": {
+        "noaa": 4.93,
+        "sg": 4.93
+      },
+      "humidity": {
+        "noaa": 92.6,
+        "sg": 92.6
+      },
+      "precipitation": {
+        "ecmwf": 0.19,
+        "ecmwf:aifs": 0.13,
+        "noaa": 0.03,
+        "sg": 0.19
+      },
+      "time": "2026-02-19T05:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 20.48,
+        "ecmwf:aifs": 20.1,
+        "noaa": 19.75,
+        "sg": 20.48
+      },
+      "cloudCover": {
+        "noaa": 4.9,
+        "sg": 4.9
+      },
+      "humidity": {
+        "noaa": 93.3,
+        "sg": 93.3
+      },
+      "precipitation": {
+        "ecmwf": 0.18,
+        "ecmwf:aifs": 0.08,
+        "noaa": 0.02,
+        "sg": 0.18
+      },
+      "time": "2026-02-19T06:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 20.37,
+        "ecmwf:aifs": 20.71,
+        "noaa": 19.67,
+        "sg": 20.37
+      },
+      "cloudCover": {
+        "noaa": 4.93,
+        "sg": 4.93
+      },
+      "humidity": {
+        "noaa": 93.9,
+        "sg": 93.9
+      },
+      "precipitation": {
+        "ecmwf": 0.14,
+        "ecmwf:aifs": 0.07,
+        "noaa": 0.03,
+        "sg": 0.14
+      },
+      "time": "2026-02-19T07:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 20.25,
+        "ecmwf:aifs": 21.32,
+        "noaa": 19.6,
+        "sg": 20.25
+      },
+      "cloudCover": {
+        "noaa": 4.97,
+        "sg": 4.97
+      },
+      "humidity": {
+        "noaa": 94.5,
+        "sg": 94.5
+      },
+      "precipitation": {
+        "ecmwf": 0.11,
+        "ecmwf:aifs": 0.07,
+        "noaa": 0.03,
+        "sg": 0.11
+      },
+      "time": "2026-02-19T08:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 20.14,
+        "ecmwf:aifs": 21.94,
+        "noaa": 19.53,
+        "sg": 20.14
+      },
+      "cloudCover": {
+        "noaa": 5.0,
+        "sg": 5.0
+      },
+      "humidity": {
+        "noaa": 95.1,
+        "sg": 95.1
+      },
+      "precipitation": {
+        "ecmwf": 0.08,
+        "ecmwf:aifs": 0.07,
+        "noaa": 0.03,
+        "sg": 0.08
+      },
+      "time": "2026-02-19T09:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 20.16,
+        "ecmwf:aifs": 22.55,
+        "noaa": 20.77,
+        "sg": 20.16
+      },
+      "cloudCover": {
+        "noaa": 15.87,
+        "sg": 15.87
+      },
+      "humidity": {
+        "noaa": 88.93,
+        "sg": 88.93
+      },
+      "precipitation": {
+        "ecmwf": 0.07,
+        "ecmwf:aifs": 0.06,
+        "noaa": 0.03,
+        "sg": 0.07
+      },
+      "time": "2026-02-19T10:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 20.19,
+        "ecmwf:aifs": 23.16,
+        "noaa": 22.0,
+        "sg": 20.19
+      },
+      "cloudCover": {
+        "noaa": 26.73,
+        "sg": 26.73
+      },
+      "humidity": {
+        "noaa": 82.77,
+        "sg": 82.77
+      },
+      "precipitation": {
+        "ecmwf": 0.06,
+        "ecmwf:aifs": 0.06,
+        "noaa": 0.03,
+        "sg": 0.06
+      },
+      "time": "2026-02-19T11:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 20.22,
+        "ecmwf:aifs": 23.78,
+        "noaa": 23.24,
+        "sg": 20.22
+      },
+      "cloudCover": {
+        "noaa": 37.6,
+        "sg": 37.6
+      },
+      "humidity": {
+        "noaa": 76.6,
+        "sg": 76.6
+      },
+      "precipitation": {
+        "ecmwf": 0.05,
+        "ecmwf:aifs": 0.05,
+        "noaa": 0.02,
+        "sg": 0.05
+      },
+      "time": "2026-02-19T12:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 21.1,
+        "ecmwf:aifs": 24.46,
+        "noaa": 24.49,
+        "sg": 21.1
+      },
+      "cloudCover": {
+        "noaa": 55.33,
+        "sg": 55.33
+      },
+      "humidity": {
+        "noaa": 70.53,
+        "sg": 70.53
+      },
+      "precipitation": {
+        "ecmwf": 0.11,
+        "ecmwf:aifs": 0.08,
+        "noaa": 0.14,
+        "sg": 0.11
+      },
+      "time": "2026-02-19T13:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 21.98,
+        "ecmwf:aifs": 25.14,
+        "noaa": 25.74,
+        "sg": 21.98
+      },
+      "cloudCover": {
+        "noaa": 73.07,
+        "sg": 73.07
+      },
+      "humidity": {
+        "noaa": 64.47,
+        "sg": 64.47
+      },
+      "precipitation": {
+        "ecmwf": 0.17,
+        "ecmwf:aifs": 0.11,
+        "noaa": 0.25,
+        "sg": 0.17
+      },
+      "time": "2026-02-19T14:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 22.86,
+        "ecmwf:aifs": 25.83,
+        "noaa": 26.99,
+        "sg": 22.86
+      },
+      "cloudCover": {
+        "noaa": 90.8,
+        "sg": 90.8
+      },
+      "humidity": {
+        "noaa": 58.4,
+        "sg": 58.4
+      },
+      "precipitation": {
+        "ecmwf": 0.23,
+        "ecmwf:aifs": 0.14,
+        "noaa": 0.37,
+        "sg": 0.23
+      },
+      "time": "2026-02-19T15:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 23.32,
+        "ecmwf:aifs": 26.51,
+        "noaa": 27.35,
+        "sg": 23.32
+      },
+      "cloudCover": {
+        "noaa": 77.93,
+        "sg": 77.93
+      },
+      "humidity": {
+        "noaa": 56.6,
+        "sg": 56.6
+      },
+      "precipitation": {
+        "ecmwf": 0.26,
+        "ecmwf:aifs": 0.16,
+        "noaa": 0.33,
+        "sg": 0.26
+      },
+      "time": "2026-02-19T16:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 23.79,
+        "ecmwf:aifs": 27.2,
+        "noaa": 27.72,
+        "sg": 23.79
+      },
+      "cloudCover": {
+        "noaa": 65.07,
+        "sg": 65.07
+      },
+      "humidity": {
+        "noaa": 54.8,
+        "sg": 54.8
+      },
+      "precipitation": {
+        "ecmwf": 0.29,
+        "ecmwf:aifs": 0.19,
+        "noaa": 0.3,
+        "sg": 0.29
+      },
+      "time": "2026-02-19T17:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 24.26,
+        "ecmwf:aifs": 27.88,
+        "noaa": 28.09,
+        "sg": 24.26
+      },
+      "cloudCover": {
+        "noaa": 52.2,
+        "sg": 52.2
+      },
+      "humidity": {
+        "noaa": 53.0,
+        "sg": 53.0
+      },
+      "precipitation": {
+        "ecmwf": 0.32,
+        "ecmwf:aifs": 0.22,
+        "noaa": 0.27,
+        "sg": 0.32
+      },
+      "time": "2026-02-19T18:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 23.56,
+        "ecmwf:aifs": 26.9,
+        "noaa": 26.72,
+        "sg": 23.56
+      },
+      "cloudCover": {
+        "noaa": 36.47,
+        "sg": 36.47
+      },
+      "humidity": {
+        "noaa": 58.87,
+        "sg": 58.87
+      },
+      "precipitation": {
+        "ecmwf": 0.21,
+        "ecmwf:aifs": 0.19,
+        "noaa": 0.2,
+        "sg": 0.21
+      },
+      "time": "2026-02-19T19:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 22.87,
+        "ecmwf:aifs": 25.92,
+        "noaa": 25.34,
+        "sg": 22.87
+      },
+      "cloudCover": {
+        "noaa": 20.73,
+        "sg": 20.73
+      },
+      "humidity": {
+        "noaa": 64.73,
+        "sg": 64.73
+      },
+      "precipitation": {
+        "ecmwf": 0.11,
+        "ecmwf:aifs": 0.17,
+        "noaa": 0.13,
+        "sg": 0.11
+      },
+      "time": "2026-02-19T20:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 22.17,
+        "ecmwf:aifs": 24.93,
+        "noaa": 23.96,
+        "sg": 22.17
+      },
+      "cloudCover": {
+        "noaa": 5.0,
+        "sg": 5.0
+      },
+      "humidity": {
+        "noaa": 70.6,
+        "sg": 70.6
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.14,
+        "noaa": 0.07,
+        "sg": 0.0
+      },
+      "time": "2026-02-19T21:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 21.21,
+        "ecmwf:aifs": 23.95,
+        "noaa": 23.02,
+        "sg": 21.21
+      },
+      "cloudCover": {
+        "noaa": 10.87,
+        "sg": 10.87
+      },
+      "humidity": {
+        "noaa": 76.0,
+        "sg": 76.0
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.12,
+        "noaa": 0.06,
+        "sg": 0.0
+      },
+      "time": "2026-02-19T22:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 20.25,
+        "ecmwf:aifs": 22.97,
+        "noaa": 22.09,
+        "sg": 20.25
+      },
+      "cloudCover": {
+        "noaa": 16.73,
+        "sg": 16.73
+      },
+      "humidity": {
+        "noaa": 81.4,
+        "sg": 81.4
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.09,
+        "noaa": 0.05,
+        "sg": 0.0
+      },
+      "time": "2026-02-19T23:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 19.29,
+        "ecmwf:aifs": 21.98,
+        "noaa": 21.15,
+        "sg": 19.29
+      },
+      "cloudCover": {
+        "noaa": 22.6,
+        "sg": 22.6
+      },
+      "humidity": {
+        "noaa": 86.8,
+        "sg": 86.8
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.07,
+        "noaa": 0.03,
+        "sg": 0.0
+      },
+      "time": "2026-02-20T00:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 18.89,
+        "ecmwf:aifs": 21.57,
+        "noaa": 20.72,
+        "sg": 18.89
+      },
+      "cloudCover": {
+        "noaa": 24.87,
+        "sg": 24.87
+      },
+      "humidity": {
+        "noaa": 87.67,
+        "sg": 87.67
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.06,
+        "noaa": 0.02,
+        "sg": 0.0
+      },
+      "time": "2026-02-20T01:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 18.49,
+        "ecmwf:aifs": 21.15,
+        "noaa": 20.3,
+        "sg": 18.49
+      },
+      "cloudCover": {
+        "noaa": 27.13,
+        "sg": 27.13
+      },
+      "humidity": {
+        "noaa": 88.53,
+        "sg": 88.53
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.05,
+        "noaa": 0.01,
+        "sg": 0.0
+      },
+      "time": "2026-02-20T02:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 18.09,
+        "ecmwf:aifs": 20.73,
+        "noaa": 19.87,
+        "sg": 18.09
+      },
+      "cloudCover": {
+        "noaa": 29.4,
+        "sg": 29.4
+      },
+      "humidity": {
+        "noaa": 89.4,
+        "sg": 89.4
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.04,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-20T03:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 17.52,
+        "ecmwf:aifs": 20.32,
+        "noaa": 19.58,
+        "sg": 17.52
+      },
+      "cloudCover": {
+        "noaa": 22.8,
+        "sg": 22.8
+      },
+      "humidity": {
+        "noaa": 89.67,
+        "sg": 89.67
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.03,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-20T04:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 16.94,
+        "ecmwf:aifs": 19.9,
+        "noaa": 19.29,
+        "sg": 16.94
+      },
+      "cloudCover": {
+        "noaa": 16.2,
+        "sg": 16.2
+      },
+      "humidity": {
+        "noaa": 89.93,
+        "sg": 89.93
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.02,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-20T05:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 16.37,
+        "ecmwf:aifs": 19.48,
+        "noaa": 19.0,
+        "sg": 16.37
+      },
+      "cloudCover": {
+        "noaa": 9.6,
+        "sg": 9.6
+      },
+      "humidity": {
+        "noaa": 90.2,
+        "sg": 90.2
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.01,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-20T06:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 16.31,
+        "ecmwf:aifs": 20.34,
+        "noaa": 18.76,
+        "sg": 16.31
+      },
+      "cloudCover": {
+        "noaa": 8.6,
+        "sg": 8.6
+      },
+      "humidity": {
+        "noaa": 90.67,
+        "sg": 90.67
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.0,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-20T07:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 16.25,
+        "ecmwf:aifs": 21.19,
+        "noaa": 18.52,
+        "sg": 16.25
+      },
+      "cloudCover": {
+        "noaa": 7.6,
+        "sg": 7.6
+      },
+      "humidity": {
+        "noaa": 91.13,
+        "sg": 91.13
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.0,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-20T08:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 16.19,
+        "ecmwf:aifs": 22.04,
+        "noaa": 18.27,
+        "sg": 16.19
+      },
+      "cloudCover": {
+        "noaa": 6.6,
+        "sg": 6.6
+      },
+      "humidity": {
+        "noaa": 91.6,
+        "sg": 91.6
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.0,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-20T09:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 16.39,
+        "ecmwf:aifs": 22.89,
+        "noaa": 19.8,
+        "sg": 16.39
+      },
+      "cloudCover": {
+        "noaa": 27.33,
+        "sg": 27.33
+      },
+      "humidity": {
+        "noaa": 83.73,
+        "sg": 83.73
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.0,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-20T10:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 16.59,
+        "ecmwf:aifs": 23.75,
+        "noaa": 21.32,
+        "sg": 16.59
+      },
+      "cloudCover": {
+        "noaa": 48.07,
+        "sg": 48.07
+      },
+      "humidity": {
+        "noaa": 75.87,
+        "sg": 75.87
+      },
+      "precipitation": {
+        "ecmwf": 0.01,
+        "ecmwf:aifs": 0.0,
+        "noaa": 0.0,
+        "sg": 0.01
+      },
+      "time": "2026-02-20T11:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 16.79,
+        "ecmwf:aifs": 24.6,
+        "noaa": 22.85,
+        "sg": 16.79
+      },
+      "cloudCover": {
+        "noaa": 68.8,
+        "sg": 68.8
+      },
+      "humidity": {
+        "noaa": 68.0,
+        "sg": 68.0
+      },
+      "precipitation": {
+        "ecmwf": 0.01,
+        "ecmwf:aifs": 0.0,
+        "noaa": 0.0,
+        "sg": 0.01
+      },
+      "time": "2026-02-20T12:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 17.98,
+        "ecmwf:aifs": 25.61,
+        "noaa": 24.54,
+        "sg": 17.98
+      },
+      "cloudCover": {
+        "noaa": 69.83,
+        "sg": 69.83
+      },
+      "humidity": {
+        "noaa": 59.33,
+        "sg": 59.33
+      },
+      "precipitation": {
+        "ecmwf": 0.01,
+        "ecmwf:aifs": 0.01,
+        "noaa": 0.0,
+        "sg": 0.01
+      },
+      "time": "2026-02-20T13:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 19.17,
+        "ecmwf:aifs": 26.62,
+        "noaa": 26.24,
+        "sg": 19.17
+      },
+      "cloudCover": {
+        "noaa": 70.87,
+        "sg": 70.87
+      },
+      "humidity": {
+        "noaa": 50.67,
+        "sg": 50.67
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.02,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-20T14:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 20.36,
+        "ecmwf:aifs": 27.63,
+        "noaa": 27.93,
+        "sg": 20.36
+      },
+      "cloudCover": {
+        "noaa": 71.9,
+        "sg": 71.9
+      },
+      "humidity": {
+        "noaa": 42.0,
+        "sg": 42.0
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.02,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-20T15:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 22.05,
+        "ecmwf:aifs": 28.64,
+        "noaa": 27.93,
+        "sg": 22.05
+      },
+      "cloudCover": {
+        "noaa": 75.07,
+        "sg": 75.07
+      },
+      "humidity": {
+        "noaa": 43.77,
+        "sg": 43.77
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.03,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-20T16:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 23.73,
+        "ecmwf:aifs": 29.65,
+        "noaa": 27.93,
+        "sg": 23.73
+      },
+      "cloudCover": {
+        "noaa": 78.23,
+        "sg": 78.23
+      },
+      "humidity": {
+        "noaa": 45.53,
+        "sg": 45.53
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.04,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-20T17:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 25.42,
+        "ecmwf:aifs": 30.66,
+        "noaa": 27.93,
+        "sg": 25.42
+      },
+      "cloudCover": {
+        "noaa": 81.4,
+        "sg": 81.4
+      },
+      "humidity": {
+        "noaa": 47.3,
+        "sg": 47.3
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.05,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-20T18:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 24.29,
+        "ecmwf:aifs": 29.43,
+        "noaa": 26.34,
+        "sg": 24.29
+      },
+      "cloudCover": {
+        "noaa": 87.6,
+        "sg": 87.6
+      },
+      "humidity": {
+        "noaa": 54.73,
+        "sg": 54.73
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.06,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-20T19:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 23.15,
+        "ecmwf:aifs": 28.19,
+        "noaa": 24.75,
+        "sg": 23.15
+      },
+      "cloudCover": {
+        "noaa": 93.8,
+        "sg": 93.8
+      },
+      "humidity": {
+        "noaa": 62.17,
+        "sg": 62.17
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.08,
+        "noaa": 0.01,
+        "sg": 0.0
+      },
+      "time": "2026-02-20T20:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 22.02,
+        "ecmwf:aifs": 26.96,
+        "noaa": 23.16,
+        "sg": 22.02
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 69.6,
+        "sg": 69.6
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.1,
+        "noaa": 0.01,
+        "sg": 0.0
+      },
+      "time": "2026-02-20T21:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 20.95,
+        "ecmwf:aifs": 25.72,
+        "noaa": 22.44,
+        "sg": 20.95
+      },
+      "cloudCover": {
+        "noaa": 97.47,
+        "sg": 97.47
+      },
+      "humidity": {
+        "noaa": 72.4,
+        "sg": 72.4
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.11,
+        "noaa": 0.01,
+        "sg": 0.0
+      },
+      "time": "2026-02-20T22:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 19.87,
+        "ecmwf:aifs": 24.48,
+        "noaa": 21.72,
+        "sg": 19.87
+      },
+      "cloudCover": {
+        "noaa": 94.93,
+        "sg": 94.93
+      },
+      "humidity": {
+        "noaa": 75.2,
+        "sg": 75.2
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.13,
+        "noaa": 0.01,
+        "sg": 0.0
+      },
+      "time": "2026-02-20T23:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 18.79,
+        "ecmwf:aifs": 23.25,
+        "noaa": 21.0,
+        "sg": 18.79
+      },
+      "cloudCover": {
+        "noaa": 92.4,
+        "sg": 92.4
+      },
+      "humidity": {
+        "noaa": 78.0,
+        "sg": 78.0
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.14,
+        "noaa": 0.01,
+        "sg": 0.0
+      },
+      "time": "2026-02-21T00:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 18.41,
+        "ecmwf:aifs": 22.88,
+        "noaa": 20.74,
+        "sg": 18.41
+      },
+      "cloudCover": {
+        "noaa": 81.67,
+        "sg": 81.67
+      },
+      "humidity": {
+        "noaa": 80.07,
+        "sg": 80.07
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.19,
+        "noaa": 0.01,
+        "sg": 0.0
+      },
+      "time": "2026-02-21T01:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 18.02,
+        "ecmwf:aifs": 22.52,
+        "noaa": 20.48,
+        "sg": 18.02
+      },
+      "cloudCover": {
+        "noaa": 70.93,
+        "sg": 70.93
+      },
+      "humidity": {
+        "noaa": 82.13,
+        "sg": 82.13
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.24,
+        "noaa": 0.02,
+        "sg": 0.0
+      },
+      "time": "2026-02-21T02:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 17.64,
+        "ecmwf:aifs": 22.16,
+        "noaa": 20.23,
+        "sg": 17.64
+      },
+      "cloudCover": {
+        "noaa": 60.2,
+        "sg": 60.2
+      },
+      "humidity": {
+        "noaa": 84.2,
+        "sg": 84.2
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.29,
+        "noaa": 0.02,
+        "sg": 0.0
+      },
+      "time": "2026-02-21T03:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 17.08,
+        "ecmwf:aifs": 21.8,
+        "noaa": 19.76,
+        "sg": 17.08
+      },
+      "cloudCover": {
+        "noaa": 64.27,
+        "sg": 64.27
+      },
+      "humidity": {
+        "noaa": 85.53,
+        "sg": 85.53
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.34,
+        "noaa": 0.02,
+        "sg": 0.0
+      },
+      "time": "2026-02-21T04:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 16.53,
+        "ecmwf:aifs": 21.44,
+        "noaa": 19.29,
+        "sg": 16.53
+      },
+      "cloudCover": {
+        "noaa": 68.33,
+        "sg": 68.33
+      },
+      "humidity": {
+        "noaa": 86.87,
+        "sg": 86.87
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.39,
+        "noaa": 0.02,
+        "sg": 0.0
+      },
+      "time": "2026-02-21T05:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 15.98,
+        "ecmwf:aifs": 21.08,
+        "noaa": 18.83,
+        "sg": 15.98
+      },
+      "cloudCover": {
+        "noaa": 72.4,
+        "sg": 72.4
+      },
+      "humidity": {
+        "noaa": 88.2,
+        "sg": 88.2
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.43,
+        "noaa": 0.01,
+        "sg": 0.0
+      },
+      "time": "2026-02-21T06:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 15.6,
+        "ecmwf:aifs": 21.42,
+        "noaa": 18.49,
+        "sg": 15.6
+      },
+      "cloudCover": {
+        "noaa": 81.6,
+        "sg": 81.6
+      },
+      "humidity": {
+        "noaa": 88.2,
+        "sg": 88.2
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.42,
+        "noaa": 0.01,
+        "sg": 0.0
+      },
+      "time": "2026-02-21T07:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 15.23,
+        "ecmwf:aifs": 21.77,
+        "noaa": 18.16,
+        "sg": 15.23
+      },
+      "cloudCover": {
+        "noaa": 90.8,
+        "sg": 90.8
+      },
+      "humidity": {
+        "noaa": 88.2,
+        "sg": 88.2
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.4,
+        "noaa": 0.01,
+        "sg": 0.0
+      },
+      "time": "2026-02-21T08:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 14.85,
+        "ecmwf:aifs": 22.11,
+        "noaa": 17.83,
+        "sg": 14.85
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 88.2,
+        "sg": 88.2
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.38,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-21T09:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 14.8,
+        "ecmwf:aifs": 22.46,
+        "noaa": 18.88,
+        "sg": 14.8
+      },
+      "cloudCover": {
+        "noaa": 97.23,
+        "sg": 97.23
+      },
+      "humidity": {
+        "noaa": 82.77,
+        "sg": 82.77
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.36,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-21T10:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 14.75,
+        "ecmwf:aifs": 22.81,
+        "noaa": 19.92,
+        "sg": 14.75
+      },
+      "cloudCover": {
+        "noaa": 94.47,
+        "sg": 94.47
+      },
+      "humidity": {
+        "noaa": 77.33,
+        "sg": 77.33
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.34,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-21T11:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 14.7,
+        "ecmwf:aifs": 23.15,
+        "noaa": 20.97,
+        "sg": 14.7
+      },
+      "cloudCover": {
+        "noaa": 91.7,
+        "sg": 91.7
+      },
+      "humidity": {
+        "noaa": 71.9,
+        "sg": 71.9
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.32,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-21T12:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 16.46,
+        "ecmwf:aifs": 23.53,
+        "noaa": 22.99,
+        "sg": 16.46
+      },
+      "cloudCover": {
+        "noaa": 94.47,
+        "sg": 94.47
+      },
+      "humidity": {
+        "noaa": 64.17,
+        "sg": 64.17
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.45,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-21T13:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 18.21,
+        "ecmwf:aifs": 23.9,
+        "noaa": 25.02,
+        "sg": 18.21
+      },
+      "cloudCover": {
+        "noaa": 97.23,
+        "sg": 97.23
+      },
+      "humidity": {
+        "noaa": 56.43,
+        "sg": 56.43
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.59,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-21T14:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 19.96,
+        "ecmwf:aifs": 24.27,
+        "noaa": 27.05,
+        "sg": 19.96
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 48.7,
+        "sg": 48.7
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.73,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-21T15:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 21.56,
+        "ecmwf:aifs": 24.65,
+        "noaa": 27.36,
+        "sg": 21.56
+      },
+      "cloudCover": {
+        "noaa": 89.13,
+        "sg": 89.13
+      },
+      "humidity": {
+        "noaa": 47.9,
+        "sg": 47.9
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.87,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-21T16:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 23.16,
+        "ecmwf:aifs": 25.02,
+        "noaa": 27.67,
+        "sg": 23.16
+      },
+      "cloudCover": {
+        "noaa": 78.27,
+        "sg": 78.27
+      },
+      "humidity": {
+        "noaa": 47.1,
+        "sg": 47.1
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 1.01,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-21T17:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 24.75,
+        "ecmwf:aifs": 25.4,
+        "noaa": 27.98,
+        "sg": 24.75
+      },
+      "cloudCover": {
+        "noaa": 67.4,
+        "sg": 67.4
+      },
+      "humidity": {
+        "noaa": 46.3,
+        "sg": 46.3
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 1.15,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-21T18:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 23.75,
+        "ecmwf:aifs": 24.67,
+        "noaa": 26.34,
+        "sg": 23.75
+      },
+      "cloudCover": {
+        "noaa": 78.27,
+        "sg": 78.27
+      },
+      "humidity": {
+        "noaa": 50.93,
+        "sg": 50.93
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 1.04,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-21T19:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 22.75,
+        "ecmwf:aifs": 23.95,
+        "noaa": 24.7,
+        "sg": 22.75
+      },
+      "cloudCover": {
+        "noaa": 89.13,
+        "sg": 89.13
+      },
+      "humidity": {
+        "noaa": 55.57,
+        "sg": 55.57
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.93,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-21T20:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 21.75,
+        "ecmwf:aifs": 23.22,
+        "noaa": 23.06,
+        "sg": 21.75
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 60.2,
+        "sg": 60.2
+      },
+      "precipitation": {
+        "ecmwf": 0.01,
+        "ecmwf:aifs": 0.82,
+        "noaa": 0.0,
+        "sg": 0.01
+      },
+      "time": "2026-02-21T21:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 20.87,
+        "ecmwf:aifs": 22.5,
+        "noaa": 22.02,
+        "sg": 20.87
+      },
+      "cloudCover": {
+        "noaa": 96.53,
+        "sg": 96.53
+      },
+      "humidity": {
+        "noaa": 62.97,
+        "sg": 62.97
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.71,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-21T22:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 19.99,
+        "ecmwf:aifs": 21.77,
+        "noaa": 20.98,
+        "sg": 19.99
+      },
+      "cloudCover": {
+        "noaa": 93.07,
+        "sg": 93.07
+      },
+      "humidity": {
+        "noaa": 65.73,
+        "sg": 65.73
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.61,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-21T23:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 19.1,
+        "ecmwf:aifs": 21.05,
+        "noaa": 19.94,
+        "sg": 19.1
+      },
+      "cloudCover": {
+        "noaa": 89.6,
+        "sg": 89.6
+      },
+      "humidity": {
+        "noaa": 68.5,
+        "sg": 68.5
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.5,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-22T00:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 18.74,
+        "ecmwf:aifs": 20.89,
+        "noaa": 19.57,
+        "sg": 18.74
+      },
+      "cloudCover": {
+        "noaa": 93.07,
+        "sg": 93.07
+      },
+      "humidity": {
+        "noaa": 68.9,
+        "sg": 68.9
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.45,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-22T01:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 18.38,
+        "ecmwf:aifs": 20.74,
+        "noaa": 19.21,
+        "sg": 18.38
+      },
+      "cloudCover": {
+        "noaa": 96.53,
+        "sg": 96.53
+      },
+      "humidity": {
+        "noaa": 69.3,
+        "sg": 69.3
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.41,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-22T02:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 18.02,
+        "ecmwf:aifs": 20.59,
+        "noaa": 18.84,
+        "sg": 18.02
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 69.7,
+        "sg": 69.7
+      },
+      "precipitation": {
+        "ecmwf": 0.01,
+        "ecmwf:aifs": 0.36,
+        "noaa": 0.0,
+        "sg": 0.01
+      },
+      "time": "2026-02-22T03:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 17.75,
+        "ecmwf:aifs": 20.44,
+        "noaa": 18.73,
+        "sg": 17.75
+      },
+      "cloudCover": {
+        "noaa": 94.1,
+        "sg": 94.1
+      },
+      "humidity": {
+        "noaa": 70.47,
+        "sg": 70.47
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.32,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-22T04:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 17.49,
+        "ecmwf:aifs": 20.29,
+        "noaa": 18.62,
+        "sg": 17.49
+      },
+      "cloudCover": {
+        "noaa": 88.2,
+        "sg": 88.2
+      },
+      "humidity": {
+        "noaa": 71.23,
+        "sg": 71.23
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.27,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-22T05:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 17.22,
+        "ecmwf:aifs": 20.14,
+        "noaa": 18.52,
+        "sg": 17.22
+      },
+      "cloudCover": {
+        "noaa": 82.3,
+        "sg": 82.3
+      },
+      "humidity": {
+        "noaa": 72.0,
+        "sg": 72.0
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.23,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-22T06:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 16.94,
+        "ecmwf:aifs": 20.52,
+        "noaa": 18.28,
+        "sg": 16.94
+      },
+      "cloudCover": {
+        "noaa": 65.37,
+        "sg": 65.37
+      },
+      "humidity": {
+        "noaa": 77.23,
+        "sg": 77.23
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.23,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-22T07:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 16.66,
+        "ecmwf:aifs": 20.9,
+        "noaa": 18.05,
+        "sg": 16.66
+      },
+      "cloudCover": {
+        "noaa": 48.43,
+        "sg": 48.43
+      },
+      "humidity": {
+        "noaa": 82.47,
+        "sg": 82.47
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.23,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-22T08:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 16.38,
+        "ecmwf:aifs": 21.27,
+        "noaa": 17.82,
+        "sg": 16.38
+      },
+      "cloudCover": {
+        "noaa": 31.5,
+        "sg": 31.5
+      },
+      "humidity": {
+        "noaa": 87.7,
+        "sg": 87.7
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 0.23,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-22T09:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 16.37,
+        "ecmwf:aifs": 21.65,
+        "noaa": 19.5,
+        "sg": 16.37
+      },
+      "cloudCover": {
+        "noaa": 54.33,
+        "sg": 54.33
+      },
+      "humidity": {
+        "noaa": 83.1,
+        "sg": 83.1
+      },
+      "precipitation": {
+        "ecmwf": 0.01,
+        "ecmwf:aifs": 0.23,
+        "noaa": 0.0,
+        "sg": 0.01
+      },
+      "time": "2026-02-22T10:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 16.36,
+        "ecmwf:aifs": 22.03,
+        "noaa": 21.18,
+        "sg": 16.36
+      },
+      "cloudCover": {
+        "noaa": 77.17,
+        "sg": 77.17
+      },
+      "humidity": {
+        "noaa": 78.5,
+        "sg": 78.5
+      },
+      "precipitation": {
+        "ecmwf": 0.01,
+        "ecmwf:aifs": 0.23,
+        "noaa": 0.0,
+        "sg": 0.01
+      },
+      "time": "2026-02-22T11:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 16.34,
+        "ecmwf:aifs": 22.4,
+        "noaa": 22.86,
+        "sg": 16.34
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 73.9,
+        "sg": 73.9
+      },
+      "precipitation": {
+        "ecmwf": 0.02,
+        "ecmwf:aifs": 0.23,
+        "noaa": 0.0,
+        "sg": 0.02
+      },
+      "time": "2026-02-22T12:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 17.98,
+        "ecmwf:aifs": 22.62,
+        "noaa": 24.63,
+        "sg": 17.98
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 67.87,
+        "sg": 67.87
+      },
+      "precipitation": {
+        "ecmwf": 0.02,
+        "ecmwf:aifs": 0.37,
+        "noaa": 0.02,
+        "sg": 0.02
+      },
+      "time": "2026-02-22T13:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 19.61,
+        "ecmwf:aifs": 22.83,
+        "noaa": 26.41,
+        "sg": 19.61
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 61.83,
+        "sg": 61.83
+      },
+      "precipitation": {
+        "ecmwf": 0.03,
+        "ecmwf:aifs": 0.51,
+        "noaa": 0.05,
+        "sg": 0.03
+      },
+      "time": "2026-02-22T14:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 21.24,
+        "ecmwf:aifs": 23.04,
+        "noaa": 28.18,
+        "sg": 21.24
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 55.8,
+        "sg": 55.8
+      },
+      "precipitation": {
+        "ecmwf": 0.04,
+        "ecmwf:aifs": 0.65,
+        "noaa": 0.07,
+        "sg": 0.04
+      },
+      "time": "2026-02-22T15:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 22.68,
+        "ecmwf:aifs": 23.25,
+        "noaa": 27.48,
+        "sg": 22.68
+      },
+      "cloudCover": {
+        "noaa": 92.8,
+        "sg": 92.8
+      },
+      "humidity": {
+        "noaa": 59.4,
+        "sg": 59.4
+      },
+      "precipitation": {
+        "ecmwf": 0.03,
+        "ecmwf:aifs": 0.79,
+        "noaa": 0.14,
+        "sg": 0.03
+      },
+      "time": "2026-02-22T16:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 24.12,
+        "ecmwf:aifs": 23.46,
+        "noaa": 26.77,
+        "sg": 24.12
+      },
+      "cloudCover": {
+        "noaa": 85.6,
+        "sg": 85.6
+      },
+      "humidity": {
+        "noaa": 63.0,
+        "sg": 63.0
+      },
+      "precipitation": {
+        "ecmwf": 0.02,
+        "ecmwf:aifs": 0.94,
+        "noaa": 0.21,
+        "sg": 0.02
+      },
+      "time": "2026-02-22T17:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 25.56,
+        "ecmwf:aifs": 23.67,
+        "noaa": 26.07,
+        "sg": 25.56
+      },
+      "cloudCover": {
+        "noaa": 78.4,
+        "sg": 78.4
+      },
+      "humidity": {
+        "noaa": 66.6,
+        "sg": 66.6
+      },
+      "precipitation": {
+        "ecmwf": 0.01,
+        "ecmwf:aifs": 1.08,
+        "noaa": 0.28,
+        "sg": 0.01
+      },
+      "time": "2026-02-22T18:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 24.75,
+        "ecmwf:aifs": 23.12,
+        "noaa": 25.46,
+        "sg": 24.75
+      },
+      "cloudCover": {
+        "noaa": 84.9,
+        "sg": 84.9
+      },
+      "humidity": {
+        "noaa": 69.03,
+        "sg": 69.03
+      },
+      "precipitation": {
+        "ecmwf": 0.01,
+        "ecmwf:aifs": 1.11,
+        "noaa": 0.38,
+        "sg": 0.01
+      },
+      "time": "2026-02-22T19:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 23.94,
+        "ecmwf:aifs": 22.58,
+        "noaa": 24.86,
+        "sg": 23.94
+      },
+      "cloudCover": {
+        "noaa": 91.4,
+        "sg": 91.4
+      },
+      "humidity": {
+        "noaa": 71.47,
+        "sg": 71.47
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 1.15,
+        "noaa": 0.47,
+        "sg": 0.0
+      },
+      "time": "2026-02-22T20:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 23.13,
+        "ecmwf:aifs": 22.03,
+        "noaa": 24.25,
+        "sg": 23.13
+      },
+      "cloudCover": {
+        "noaa": 97.9,
+        "sg": 97.9
+      },
+      "humidity": {
+        "noaa": 73.9,
+        "sg": 73.9
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 1.19,
+        "noaa": 0.56,
+        "sg": 0.0
+      },
+      "time": "2026-02-22T21:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 21.96,
+        "ecmwf:aifs": 21.48,
+        "noaa": 23.22,
+        "sg": 21.96
+      },
+      "cloudCover": {
+        "noaa": 98.6,
+        "sg": 98.6
+      },
+      "humidity": {
+        "noaa": 79.5,
+        "sg": 79.5
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 1.22,
+        "noaa": 0.54,
+        "sg": 0.0
+      },
+      "time": "2026-02-22T22:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 20.78,
+        "ecmwf:aifs": 20.94,
+        "noaa": 22.19,
+        "sg": 20.78
+      },
+      "cloudCover": {
+        "noaa": 99.3,
+        "sg": 99.3
+      },
+      "humidity": {
+        "noaa": 85.1,
+        "sg": 85.1
+      },
+      "precipitation": {
+        "ecmwf": 0.0,
+        "ecmwf:aifs": 1.26,
+        "noaa": 0.52,
+        "sg": 0.0
+      },
+      "time": "2026-02-22T23:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf": 19.61,
+        "ecmwf:aifs": 20.39,
+        "noaa": 21.17,
+        "sg": 19.61
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 90.7,
+        "sg": 90.7
+      },
+      "precipitation": {
+        "ecmwf": 0.01,
+        "ecmwf:aifs": 1.3,
+        "noaa": 0.5,
+        "sg": 0.01
+      },
+      "time": "2026-02-23T00:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 20.31,
+        "noaa": 20.97,
+        "sg": 20.97
+      },
+      "cloudCover": {
+        "noaa": 99.57,
+        "sg": 99.57
+      },
+      "humidity": {
+        "noaa": 90.77,
+        "sg": 90.77
+      },
+      "precipitation": {
+        "ecmwf:aifs": 1.25,
+        "noaa": 0.37,
+        "sg": 0.37
+      },
+      "time": "2026-02-23T01:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 20.23,
+        "noaa": 20.77,
+        "sg": 20.77
+      },
+      "cloudCover": {
+        "noaa": 99.13,
+        "sg": 99.13
+      },
+      "humidity": {
+        "noaa": 90.83,
+        "sg": 90.83
+      },
+      "precipitation": {
+        "ecmwf:aifs": 1.19,
+        "noaa": 0.25,
+        "sg": 0.25
+      },
+      "time": "2026-02-23T02:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 20.15,
+        "noaa": 20.57,
+        "sg": 20.57
+      },
+      "cloudCover": {
+        "noaa": 98.7,
+        "sg": 98.7
+      },
+      "humidity": {
+        "noaa": 90.9,
+        "sg": 90.9
+      },
+      "precipitation": {
+        "ecmwf:aifs": 1.14,
+        "noaa": 0.13,
+        "sg": 0.13
+      },
+      "time": "2026-02-23T03:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 20.07,
+        "noaa": 20.4,
+        "sg": 20.4
+      },
+      "cloudCover": {
+        "noaa": 98.93,
+        "sg": 98.93
+      },
+      "humidity": {
+        "noaa": 92.23,
+        "sg": 92.23
+      },
+      "precipitation": {
+        "ecmwf:aifs": 1.09,
+        "noaa": 0.14,
+        "sg": 0.14
+      },
+      "time": "2026-02-23T04:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 19.99,
+        "noaa": 20.23,
+        "sg": 20.23
+      },
+      "cloudCover": {
+        "noaa": 99.17,
+        "sg": 99.17
+      },
+      "humidity": {
+        "noaa": 93.57,
+        "sg": 93.57
+      },
+      "precipitation": {
+        "ecmwf:aifs": 1.04,
+        "noaa": 0.16,
+        "sg": 0.16
+      },
+      "time": "2026-02-23T05:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 19.91,
+        "noaa": 20.06,
+        "sg": 20.06
+      },
+      "cloudCover": {
+        "noaa": 99.4,
+        "sg": 99.4
+      },
+      "humidity": {
+        "noaa": 94.9,
+        "sg": 94.9
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.99,
+        "noaa": 0.18,
+        "sg": 0.18
+      },
+      "time": "2026-02-23T06:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 20.12,
+        "noaa": 20.07,
+        "sg": 20.07
+      },
+      "cloudCover": {
+        "noaa": 99.6,
+        "sg": 99.6
+      },
+      "humidity": {
+        "noaa": 95.07,
+        "sg": 95.07
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.93,
+        "noaa": 0.18,
+        "sg": 0.18
+      },
+      "time": "2026-02-23T07:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 20.33,
+        "noaa": 20.09,
+        "sg": 20.09
+      },
+      "cloudCover": {
+        "noaa": 99.8,
+        "sg": 99.8
+      },
+      "humidity": {
+        "noaa": 95.23,
+        "sg": 95.23
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.87,
+        "noaa": 0.18,
+        "sg": 0.18
+      },
+      "time": "2026-02-23T08:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 20.54,
+        "noaa": 20.1,
+        "sg": 20.1
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 95.4,
+        "sg": 95.4
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.81,
+        "noaa": 0.18,
+        "sg": 0.18
+      },
+      "time": "2026-02-23T09:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 20.75,
+        "noaa": 21.27,
+        "sg": 21.27
+      },
+      "cloudCover": {
+        "noaa": 99.8,
+        "sg": 99.8
+      },
+      "humidity": {
+        "noaa": 89.17,
+        "sg": 89.17
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.75,
+        "noaa": 0.15,
+        "sg": 0.15
+      },
+      "time": "2026-02-23T10:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 20.96,
+        "noaa": 22.45,
+        "sg": 22.45
+      },
+      "cloudCover": {
+        "noaa": 99.6,
+        "sg": 99.6
+      },
+      "humidity": {
+        "noaa": 82.93,
+        "sg": 82.93
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.69,
+        "noaa": 0.12,
+        "sg": 0.12
+      },
+      "time": "2026-02-23T11:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 21.17,
+        "noaa": 23.62,
+        "sg": 23.62
+      },
+      "cloudCover": {
+        "noaa": 99.4,
+        "sg": 99.4
+      },
+      "humidity": {
+        "noaa": 76.7,
+        "sg": 76.7
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.63,
+        "noaa": 0.09,
+        "sg": 0.09
+      },
+      "time": "2026-02-23T12:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 21.44,
+        "noaa": 24.2,
+        "sg": 24.2
+      },
+      "cloudCover": {
+        "noaa": 90.77,
+        "sg": 90.77
+      },
+      "humidity": {
+        "noaa": 73.87,
+        "sg": 73.87
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.68,
+        "noaa": 0.09,
+        "sg": 0.09
+      },
+      "time": "2026-02-23T13:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 21.71,
+        "noaa": 24.78,
+        "sg": 24.78
+      },
+      "cloudCover": {
+        "noaa": 82.13,
+        "sg": 82.13
+      },
+      "humidity": {
+        "noaa": 71.03,
+        "sg": 71.03
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.74,
+        "noaa": 0.09,
+        "sg": 0.09
+      },
+      "time": "2026-02-23T14:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 21.98,
+        "noaa": 25.36,
+        "sg": 25.36
+      },
+      "cloudCover": {
+        "noaa": 73.5,
+        "sg": 73.5
+      },
+      "humidity": {
+        "noaa": 68.2,
+        "sg": 68.2
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.8,
+        "noaa": 0.09,
+        "sg": 0.09
+      },
+      "time": "2026-02-23T15:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 22.25,
+        "noaa": 25.89,
+        "sg": 25.89
+      },
+      "cloudCover": {
+        "noaa": 58.93,
+        "sg": 58.93
+      },
+      "humidity": {
+        "noaa": 66.8,
+        "sg": 66.8
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.85,
+        "noaa": 0.19,
+        "sg": 0.19
+      },
+      "time": "2026-02-23T16:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 22.52,
+        "noaa": 26.41,
+        "sg": 26.41
+      },
+      "cloudCover": {
+        "noaa": 44.37,
+        "sg": 44.37
+      },
+      "humidity": {
+        "noaa": 65.4,
+        "sg": 65.4
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.91,
+        "noaa": 0.3,
+        "sg": 0.3
+      },
+      "time": "2026-02-23T17:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 22.79,
+        "noaa": 26.94,
+        "sg": 26.94
+      },
+      "cloudCover": {
+        "noaa": 29.8,
+        "sg": 29.8
+      },
+      "humidity": {
+        "noaa": 64.0,
+        "sg": 64.0
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.97,
+        "noaa": 0.4,
+        "sg": 0.4
+      },
+      "time": "2026-02-23T18:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 22.36,
+        "noaa": 26.12,
+        "sg": 26.12
+      },
+      "cloudCover": {
+        "noaa": 53.1,
+        "sg": 53.1
+      },
+      "humidity": {
+        "noaa": 69.6,
+        "sg": 69.6
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.92,
+        "noaa": 0.56,
+        "sg": 0.56
+      },
+      "time": "2026-02-23T19:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 21.93,
+        "noaa": 25.31,
+        "sg": 25.31
+      },
+      "cloudCover": {
+        "noaa": 76.4,
+        "sg": 76.4
+      },
+      "humidity": {
+        "noaa": 75.2,
+        "sg": 75.2
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.88,
+        "noaa": 0.73,
+        "sg": 0.73
+      },
+      "time": "2026-02-23T20:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 21.5,
+        "noaa": 24.49,
+        "sg": 24.49
+      },
+      "cloudCover": {
+        "noaa": 99.7,
+        "sg": 99.7
+      },
+      "humidity": {
+        "noaa": 80.8,
+        "sg": 80.8
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.84,
+        "noaa": 0.9,
+        "sg": 0.9
+      },
+      "time": "2026-02-23T21:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 21.07,
+        "noaa": 23.97,
+        "sg": 23.97
+      },
+      "cloudCover": {
+        "noaa": 99.8,
+        "sg": 99.8
+      },
+      "humidity": {
+        "noaa": 82.6,
+        "sg": 82.6
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.8,
+        "noaa": 0.96,
+        "sg": 0.96
+      },
+      "time": "2026-02-23T22:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 20.64,
+        "noaa": 23.45,
+        "sg": 23.45
+      },
+      "cloudCover": {
+        "noaa": 99.9,
+        "sg": 99.9
+      },
+      "humidity": {
+        "noaa": 84.4,
+        "sg": 84.4
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.76,
+        "noaa": 1.02,
+        "sg": 1.02
+      },
+      "time": "2026-02-23T23:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 20.2,
+        "noaa": 22.93,
+        "sg": 22.93
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 86.2,
+        "sg": 86.2
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.71,
+        "noaa": 1.08,
+        "sg": 1.08
+      },
+      "time": "2026-02-24T00:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 20.14,
+        "noaa": 22.64,
+        "sg": 22.64
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 86.97,
+        "sg": 86.97
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.72,
+        "noaa": 1.11,
+        "sg": 1.11
+      },
+      "time": "2026-02-24T01:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 20.08,
+        "noaa": 22.36,
+        "sg": 22.36
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 87.73,
+        "sg": 87.73
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.72,
+        "noaa": 1.14,
+        "sg": 1.14
+      },
+      "time": "2026-02-24T02:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 20.01,
+        "noaa": 22.08,
+        "sg": 22.08
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 88.5,
+        "sg": 88.5
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.73,
+        "noaa": 1.16,
+        "sg": 1.16
+      },
+      "time": "2026-02-24T03:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 19.95,
+        "noaa": 21.66,
+        "sg": 21.66
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 90.7,
+        "sg": 90.7
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.73,
+        "noaa": 1.16,
+        "sg": 1.16
+      },
+      "time": "2026-02-24T04:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 19.89,
+        "noaa": 21.25,
+        "sg": 21.25
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 92.9,
+        "sg": 92.9
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.74,
+        "noaa": 1.15,
+        "sg": 1.15
+      },
+      "time": "2026-02-24T05:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 19.82,
+        "noaa": 20.84,
+        "sg": 20.84
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 95.1,
+        "sg": 95.1
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.74,
+        "noaa": 1.15,
+        "sg": 1.15
+      },
+      "time": "2026-02-24T06:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 20.1,
+        "noaa": 20.68,
+        "sg": 20.68
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 95.7,
+        "sg": 95.7
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.71,
+        "noaa": 1.1,
+        "sg": 1.1
+      },
+      "time": "2026-02-24T07:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 20.38,
+        "noaa": 20.53,
+        "sg": 20.53
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 96.3,
+        "sg": 96.3
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.68,
+        "noaa": 1.06,
+        "sg": 1.06
+      },
+      "time": "2026-02-24T08:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 20.65,
+        "noaa": 20.38,
+        "sg": 20.38
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 96.9,
+        "sg": 96.9
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.65,
+        "noaa": 1.02,
+        "sg": 1.02
+      },
+      "time": "2026-02-24T09:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 20.93,
+        "noaa": 20.78,
+        "sg": 20.78
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 94.63,
+        "sg": 94.63
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.62,
+        "noaa": 0.87,
+        "sg": 0.87
+      },
+      "time": "2026-02-24T10:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 21.21,
+        "noaa": 21.19,
+        "sg": 21.19
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 92.37,
+        "sg": 92.37
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.59,
+        "noaa": 0.73,
+        "sg": 0.73
+      },
+      "time": "2026-02-24T11:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 21.48,
+        "noaa": 21.6,
+        "sg": 21.6
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 90.1,
+        "sg": 90.1
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.56,
+        "noaa": 0.59,
+        "sg": 0.59
+      },
+      "time": "2026-02-24T12:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 21.83,
+        "noaa": 22.52,
+        "sg": 22.52
+      },
+      "cloudCover": {
+        "noaa": 99.33,
+        "sg": 99.33
+      },
+      "humidity": {
+        "noaa": 85.97,
+        "sg": 85.97
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.63,
+        "noaa": 0.51,
+        "sg": 0.51
+      },
+      "time": "2026-02-24T13:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 22.18,
+        "noaa": 23.44,
+        "sg": 23.44
+      },
+      "cloudCover": {
+        "noaa": 98.67,
+        "sg": 98.67
+      },
+      "humidity": {
+        "noaa": 81.83,
+        "sg": 81.83
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.71,
+        "noaa": 0.43,
+        "sg": 0.43
+      },
+      "time": "2026-02-24T14:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 22.53,
+        "noaa": 24.36,
+        "sg": 24.36
+      },
+      "cloudCover": {
+        "noaa": 98.0,
+        "sg": 98.0
+      },
+      "humidity": {
+        "noaa": 77.7,
+        "sg": 77.7
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.79,
+        "noaa": 0.35,
+        "sg": 0.35
+      },
+      "time": "2026-02-24T15:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 22.88,
+        "noaa": 24.73,
+        "sg": 24.73
+      },
+      "cloudCover": {
+        "noaa": 98.67,
+        "sg": 98.67
+      },
+      "humidity": {
+        "noaa": 76.17,
+        "sg": 76.17
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.86,
+        "noaa": 0.37,
+        "sg": 0.37
+      },
+      "time": "2026-02-24T16:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 23.23,
+        "noaa": 25.11,
+        "sg": 25.11
+      },
+      "cloudCover": {
+        "noaa": 99.33,
+        "sg": 99.33
+      },
+      "humidity": {
+        "noaa": 74.63,
+        "sg": 74.63
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.94,
+        "noaa": 0.39,
+        "sg": 0.39
+      },
+      "time": "2026-02-24T17:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 23.59,
+        "noaa": 25.48,
+        "sg": 25.48
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 73.1,
+        "sg": 73.1
+      },
+      "precipitation": {
+        "ecmwf:aifs": 1.02,
+        "noaa": 0.4,
+        "sg": 0.4
+      },
+      "time": "2026-02-24T18:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 23.11,
+        "noaa": 24.9,
+        "sg": 24.9
+      },
+      "cloudCover": {
+        "noaa": 96.17,
+        "sg": 96.17
+      },
+      "humidity": {
+        "noaa": 76.4,
+        "sg": 76.4
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.98,
+        "noaa": 0.38,
+        "sg": 0.38
+      },
+      "time": "2026-02-24T19:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 22.63,
+        "noaa": 24.32,
+        "sg": 24.32
+      },
+      "cloudCover": {
+        "noaa": 92.33,
+        "sg": 92.33
+      },
+      "humidity": {
+        "noaa": 79.7,
+        "sg": 79.7
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.95,
+        "noaa": 0.36,
+        "sg": 0.36
+      },
+      "time": "2026-02-24T20:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 22.16,
+        "noaa": 23.75,
+        "sg": 23.75
+      },
+      "cloudCover": {
+        "noaa": 88.5,
+        "sg": 88.5
+      },
+      "humidity": {
+        "noaa": 83.0,
+        "sg": 83.0
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.92,
+        "noaa": 0.33,
+        "sg": 0.33
+      },
+      "time": "2026-02-24T21:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 21.68,
+        "noaa": 23.12,
+        "sg": 23.12
+      },
+      "cloudCover": {
+        "noaa": 90.03,
+        "sg": 90.03
+      },
+      "humidity": {
+        "noaa": 85.8,
+        "sg": 85.8
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.89,
+        "noaa": 0.44,
+        "sg": 0.44
+      },
+      "time": "2026-02-24T22:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 21.21,
+        "noaa": 22.5,
+        "sg": 22.5
+      },
+      "cloudCover": {
+        "noaa": 91.57,
+        "sg": 91.57
+      },
+      "humidity": {
+        "noaa": 88.6,
+        "sg": 88.6
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.85,
+        "noaa": 0.55,
+        "sg": 0.55
+      },
+      "time": "2026-02-24T23:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 20.73,
+        "noaa": 21.87,
+        "sg": 21.87
+      },
+      "cloudCover": {
+        "noaa": 93.1,
+        "sg": 93.1
+      },
+      "humidity": {
+        "noaa": 91.4,
+        "sg": 91.4
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.82,
+        "noaa": 0.66,
+        "sg": 0.66
+      },
+      "time": "2026-02-25T00:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 20.61,
+        "noaa": 21.73,
+        "sg": 21.73
+      },
+      "cloudCover": {
+        "noaa": 83.73,
+        "sg": 83.73
+      },
+      "humidity": {
+        "noaa": 91.23,
+        "sg": 91.23
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.76,
+        "noaa": 0.6,
+        "sg": 0.6
+      },
+      "time": "2026-02-25T01:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 20.49,
+        "noaa": 21.6,
+        "sg": 21.6
+      },
+      "cloudCover": {
+        "noaa": 74.37,
+        "sg": 74.37
+      },
+      "humidity": {
+        "noaa": 91.07,
+        "sg": 91.07
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.7,
+        "noaa": 0.55,
+        "sg": 0.55
+      },
+      "time": "2026-02-25T02:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 20.38,
+        "noaa": 21.46,
+        "sg": 21.46
+      },
+      "cloudCover": {
+        "noaa": 65.0,
+        "sg": 65.0
+      },
+      "humidity": {
+        "noaa": 90.9,
+        "sg": 90.9
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.64,
+        "noaa": 0.5,
+        "sg": 0.5
+      },
+      "time": "2026-02-25T03:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 20.26,
+        "noaa": 21.19,
+        "sg": 21.19
+      },
+      "cloudCover": {
+        "noaa": 63.9,
+        "sg": 63.9
+      },
+      "humidity": {
+        "noaa": 91.5,
+        "sg": 91.5
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.58,
+        "noaa": 0.48,
+        "sg": 0.48
+      },
+      "time": "2026-02-25T04:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 20.14,
+        "noaa": 20.92,
+        "sg": 20.92
+      },
+      "cloudCover": {
+        "noaa": 62.8,
+        "sg": 62.8
+      },
+      "humidity": {
+        "noaa": 92.1,
+        "sg": 92.1
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.52,
+        "noaa": 0.47,
+        "sg": 0.47
+      },
+      "time": "2026-02-25T05:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 20.02,
+        "noaa": 20.65,
+        "sg": 20.65
+      },
+      "cloudCover": {
+        "noaa": 61.7,
+        "sg": 61.7
+      },
+      "humidity": {
+        "noaa": 92.7,
+        "sg": 92.7
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.46,
+        "noaa": 0.45,
+        "sg": 0.45
+      },
+      "time": "2026-02-25T06:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 20.42,
+        "noaa": 20.53,
+        "sg": 20.53
+      },
+      "cloudCover": {
+        "noaa": 71.73,
+        "sg": 71.73
+      },
+      "humidity": {
+        "noaa": 93.0,
+        "sg": 93.0
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.41,
+        "noaa": 0.4,
+        "sg": 0.4
+      },
+      "time": "2026-02-25T07:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 20.82,
+        "noaa": 20.41,
+        "sg": 20.41
+      },
+      "cloudCover": {
+        "noaa": 81.77,
+        "sg": 81.77
+      },
+      "humidity": {
+        "noaa": 93.3,
+        "sg": 93.3
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.36,
+        "noaa": 0.34,
+        "sg": 0.34
+      },
+      "time": "2026-02-25T08:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 21.22,
+        "noaa": 20.29,
+        "sg": 20.29
+      },
+      "cloudCover": {
+        "noaa": 91.8,
+        "sg": 91.8
+      },
+      "humidity": {
+        "noaa": 93.6,
+        "sg": 93.6
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.31,
+        "noaa": 0.29,
+        "sg": 0.29
+      },
+      "time": "2026-02-25T09:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 21.62,
+        "noaa": 20.87,
+        "sg": 20.87
+      },
+      "cloudCover": {
+        "noaa": 83.07,
+        "sg": 83.07
+      },
+      "humidity": {
+        "noaa": 91.87,
+        "sg": 91.87
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.26,
+        "noaa": 0.32,
+        "sg": 0.32
+      },
+      "time": "2026-02-25T10:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 22.02,
+        "noaa": 21.45,
+        "sg": 21.45
+      },
+      "cloudCover": {
+        "noaa": 74.33,
+        "sg": 74.33
+      },
+      "humidity": {
+        "noaa": 90.13,
+        "sg": 90.13
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.21,
+        "noaa": 0.35,
+        "sg": 0.35
+      },
+      "time": "2026-02-25T11:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 22.43,
+        "noaa": 22.03,
+        "sg": 22.03
+      },
+      "cloudCover": {
+        "noaa": 65.6,
+        "sg": 65.6
+      },
+      "humidity": {
+        "noaa": 88.4,
+        "sg": 88.4
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.16,
+        "noaa": 0.38,
+        "sg": 0.38
+      },
+      "time": "2026-02-25T12:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 22.99,
+        "noaa": 23.57,
+        "sg": 23.57
+      },
+      "cloudCover": {
+        "noaa": 71.03,
+        "sg": 71.03
+      },
+      "humidity": {
+        "noaa": 79.73,
+        "sg": 79.73
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.23,
+        "noaa": 0.28,
+        "sg": 0.28
+      },
+      "time": "2026-02-25T13:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 23.55,
+        "noaa": 25.11,
+        "sg": 25.11
+      },
+      "cloudCover": {
+        "noaa": 76.47,
+        "sg": 76.47
+      },
+      "humidity": {
+        "noaa": 71.07,
+        "sg": 71.07
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.3,
+        "noaa": 0.18,
+        "sg": 0.18
+      },
+      "time": "2026-02-25T14:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 24.12,
+        "noaa": 26.65,
+        "sg": 26.65
+      },
+      "cloudCover": {
+        "noaa": 81.9,
+        "sg": 81.9
+      },
+      "humidity": {
+        "noaa": 62.4,
+        "sg": 62.4
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.37,
+        "noaa": 0.08,
+        "sg": 0.08
+      },
+      "time": "2026-02-25T15:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 24.68,
+        "noaa": 26.91,
+        "sg": 26.91
+      },
+      "cloudCover": {
+        "noaa": 84.93,
+        "sg": 84.93
+      },
+      "humidity": {
+        "noaa": 61.13,
+        "sg": 61.13
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.43,
+        "noaa": 0.11,
+        "sg": 0.11
+      },
+      "time": "2026-02-25T16:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 25.24,
+        "noaa": 27.17,
+        "sg": 27.17
+      },
+      "cloudCover": {
+        "noaa": 87.97,
+        "sg": 87.97
+      },
+      "humidity": {
+        "noaa": 59.87,
+        "sg": 59.87
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.5,
+        "noaa": 0.15,
+        "sg": 0.15
+      },
+      "time": "2026-02-25T17:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 25.81,
+        "noaa": 27.43,
+        "sg": 27.43
+      },
+      "cloudCover": {
+        "noaa": 91.0,
+        "sg": 91.0
+      },
+      "humidity": {
+        "noaa": 58.6,
+        "sg": 58.6
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.57,
+        "noaa": 0.18,
+        "sg": 0.18
+      },
+      "time": "2026-02-25T18:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 25.03,
+        "noaa": 26.51,
+        "sg": 26.51
+      },
+      "cloudCover": {
+        "noaa": 94.0,
+        "sg": 94.0
+      },
+      "humidity": {
+        "noaa": 62.77,
+        "sg": 62.77
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.51,
+        "noaa": 0.2,
+        "sg": 0.2
+      },
+      "time": "2026-02-25T19:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 24.25,
+        "noaa": 25.59,
+        "sg": 25.59
+      },
+      "cloudCover": {
+        "noaa": 97.0,
+        "sg": 97.0
+      },
+      "humidity": {
+        "noaa": 66.93,
+        "sg": 66.93
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.44,
+        "noaa": 0.22,
+        "sg": 0.22
+      },
+      "time": "2026-02-25T20:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 23.47,
+        "noaa": 24.67,
+        "sg": 24.67
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 71.1,
+        "sg": 71.1
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.38,
+        "noaa": 0.24,
+        "sg": 0.24
+      },
+      "time": "2026-02-25T21:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 22.69,
+        "noaa": 23.87,
+        "sg": 23.87
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 74.27,
+        "sg": 74.27
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.32,
+        "noaa": 0.21,
+        "sg": 0.21
+      },
+      "time": "2026-02-25T22:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 21.91,
+        "noaa": 23.07,
+        "sg": 23.07
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 77.43,
+        "sg": 77.43
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.26,
+        "noaa": 0.17,
+        "sg": 0.17
+      },
+      "time": "2026-02-25T23:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 21.13,
+        "noaa": 22.26,
+        "sg": 22.26
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 80.6,
+        "sg": 80.6
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.2,
+        "noaa": 0.14,
+        "sg": 0.14
+      },
+      "time": "2026-02-26T00:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 20.71,
+        "noaa": 21.79,
+        "sg": 21.79
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 82.27,
+        "sg": 82.27
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.17,
+        "noaa": 0.09,
+        "sg": 0.09
+      },
+      "time": "2026-02-26T01:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 20.3,
+        "noaa": 21.33,
+        "sg": 21.33
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 83.93,
+        "sg": 83.93
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.14,
+        "noaa": 0.05,
+        "sg": 0.05
+      },
+      "time": "2026-02-26T02:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 19.89,
+        "noaa": 20.86,
+        "sg": 20.86
+      },
+      "cloudCover": {
+        "noaa": 100.0,
+        "sg": 100.0
+      },
+      "humidity": {
+        "noaa": 85.6,
+        "sg": 85.6
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.11,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-26T03:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 19.48,
+        "noaa": 20.59,
+        "sg": 20.59
+      },
+      "cloudCover": {
+        "noaa": 66.67,
+        "sg": 66.67
+      },
+      "humidity": {
+        "noaa": 85.73,
+        "sg": 85.73
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.08,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-26T04:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 19.07,
+        "noaa": 20.33,
+        "sg": 20.33
+      },
+      "cloudCover": {
+        "noaa": 33.33,
+        "sg": 33.33
+      },
+      "humidity": {
+        "noaa": 85.87,
+        "sg": 85.87
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.05,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-26T05:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 18.66,
+        "noaa": 20.06,
+        "sg": 20.06
+      },
+      "cloudCover": {
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "humidity": {
+        "noaa": 86.0,
+        "sg": 86.0
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.02,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-26T06:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 19.46,
+        "noaa": 19.89,
+        "sg": 19.89
+      },
+      "cloudCover": {
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "humidity": {
+        "noaa": 85.2,
+        "sg": 85.2
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.02,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-26T07:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 20.26,
+        "noaa": 19.72,
+        "sg": 19.72
+      },
+      "cloudCover": {
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "humidity": {
+        "noaa": 84.4,
+        "sg": 84.4
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.01,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-26T08:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 21.06,
+        "noaa": 19.56,
+        "sg": 19.56
+      },
+      "cloudCover": {
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "humidity": {
+        "noaa": 83.6,
+        "sg": 83.6
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.01,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-26T09:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 21.86,
+        "noaa": 21.16,
+        "sg": 21.16
+      },
+      "cloudCover": {
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "humidity": {
+        "noaa": 75.03,
+        "sg": 75.03
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.01,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-26T10:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 22.66,
+        "noaa": 22.76,
+        "sg": 22.76
+      },
+      "cloudCover": {
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "humidity": {
+        "noaa": 66.47,
+        "sg": 66.47
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.0,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-26T11:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 23.46,
+        "noaa": 24.37,
+        "sg": 24.37
+      },
+      "cloudCover": {
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "humidity": {
+        "noaa": 57.9,
+        "sg": 57.9
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.0,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-26T12:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 24.4,
+        "noaa": 25.89,
+        "sg": 25.89
+      },
+      "cloudCover": {
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "humidity": {
+        "noaa": 50.33,
+        "sg": 50.33
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.01,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-26T13:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 25.34,
+        "noaa": 27.41,
+        "sg": 27.41
+      },
+      "cloudCover": {
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "humidity": {
+        "noaa": 42.77,
+        "sg": 42.77
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.02,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-26T14:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 26.28,
+        "noaa": 28.93,
+        "sg": 28.93
+      },
+      "cloudCover": {
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "humidity": {
+        "noaa": 35.2,
+        "sg": 35.2
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.03,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-26T15:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 27.22,
+        "noaa": 29.05,
+        "sg": 29.05
+      },
+      "cloudCover": {
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "humidity": {
+        "noaa": 35.03,
+        "sg": 35.03
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.04,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-26T16:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 28.17,
+        "noaa": 29.17,
+        "sg": 29.17
+      },
+      "cloudCover": {
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "humidity": {
+        "noaa": 34.87,
+        "sg": 34.87
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.06,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-26T17:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 29.11,
+        "noaa": 29.29,
+        "sg": 29.29
+      },
+      "cloudCover": {
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "humidity": {
+        "noaa": 34.7,
+        "sg": 34.7
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.07,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-26T18:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 28.02,
+        "noaa": 28.38,
+        "sg": 28.38
+      },
+      "cloudCover": {
+        "noaa": 3.1,
+        "sg": 3.1
+      },
+      "humidity": {
+        "noaa": 38.47,
+        "sg": 38.47
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.06,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-26T19:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 26.93,
+        "noaa": 27.48,
+        "sg": 27.48
+      },
+      "cloudCover": {
+        "noaa": 6.2,
+        "sg": 6.2
+      },
+      "humidity": {
+        "noaa": 42.23,
+        "sg": 42.23
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.05,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-26T20:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 25.84,
+        "noaa": 26.57,
+        "sg": 26.57
+      },
+      "cloudCover": {
+        "noaa": 9.3,
+        "sg": 9.3
+      },
+      "humidity": {
+        "noaa": 46.0,
+        "sg": 46.0
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.03,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-26T21:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 24.75,
+        "noaa": 25.56,
+        "sg": 25.56
+      },
+      "cloudCover": {
+        "noaa": 6.2,
+        "sg": 6.2
+      },
+      "humidity": {
+        "noaa": 50.3,
+        "sg": 50.3
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.02,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-26T22:00:00+00:00"
+    },
+    {
+      "airTemperature": {
+        "ecmwf:aifs": 23.66,
+        "noaa": 24.54,
+        "sg": 24.54
+      },
+      "cloudCover": {
+        "noaa": 3.1,
+        "sg": 3.1
+      },
+      "humidity": {
+        "noaa": 54.6,
+        "sg": 54.6
+      },
+      "precipitation": {
+        "ecmwf:aifs": 0.01,
+        "noaa": 0.0,
+        "sg": 0.0
+      },
+      "time": "2026-02-26T23:00:00+00:00"
+    }
+  ],
+  "meta": {
+    "cost": 1,
+    "dailyQuota": 10,
+    "end": "2026-02-26 23:00",
+    "lat": -23.487517941202356,
+    "lng": -46.41700517542349,
+    "params": [
+      "airTemperature",
+      "precipitation",
+      "cloudCover",
+      "humidity"
+    ],
+    "requestCount": 1,
+    "start": "2026-02-17 00:00"
+  }
+}
