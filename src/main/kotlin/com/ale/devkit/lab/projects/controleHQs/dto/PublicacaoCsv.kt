@@ -1,9 +1,8 @@
-package com.ale.devkit.lab.projects.controleHQs.controller.response
+package com.ale.devkit.lab.projects.controleHQs.dto
 
-import com.ale.devkit.lab.projects.controleHQs.dto.Status
 import java.time.LocalDate
 
-data class ColecaoResponse(
+data class PublicacaoCsv(
     val id: Long,
     val isbn: String,
     val titulo: String,

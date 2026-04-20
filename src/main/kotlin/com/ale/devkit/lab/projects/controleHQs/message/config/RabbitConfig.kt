@@ -1,4 +1,4 @@
-package com.ale.devkit.lab.projects.controleHQs.messaging.config
+package com.ale.devkit.lab.projects.controleHQs.message.config
 
 import org.springframework.amqp.core.Queue
 import org.springframework.amqp.rabbit.connection.ConnectionFactory

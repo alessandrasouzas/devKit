@@ -1,4 +1,4 @@
-package com.ale.devkit.lab.projects.controleHQs.messaging.producer
+package com.ale.devkit.lab.projects.controleHQs.message.producer
 
 import com.ale.devkit.lab.projects.controleHQs.dto.ColecaoMessage
 import org.slf4j.LoggerFactory
