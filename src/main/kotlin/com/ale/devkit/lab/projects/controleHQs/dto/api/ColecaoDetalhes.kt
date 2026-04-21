@@ -1,4 +1,4 @@
-package com.ale.devkit.lab.projects.controleHQs.dto
+package com.ale.devkit.lab.projects.controleHQs.dto.api
 
 data class ColecaoDetalhes(
     val autor: String?,

@@ -1,11 +1,12 @@
 package com.ale.devkit.lab.projects.controleHQs.service
 
+import com.ale.devkit.lab.projects.controleHQs.controller.request.ColecaoAtualizaRequest
 import com.ale.devkit.lab.projects.controleHQs.controller.request.ColecaoRequest
 import com.ale.devkit.lab.projects.controleHQs.controller.response.ColecaoResponse
-import com.ale.devkit.lab.projects.controleHQs.data.PublicacaoEntity
-import com.ale.devkit.lab.projects.controleHQs.data.PublicacaoRepository
-import com.ale.devkit.lab.projects.controleHQs.dto.ColecaoMessage
-import com.ale.devkit.lab.projects.controleHQs.message.producer.PublicacaoProducer
+import com.ale.devkit.lab.projects.controleHQs.dto.message.ColecaoMessage
+import com.ale.devkit.lab.projects.controleHQs.infraestrutura.data.entity.ColecaoEntity
+import com.ale.devkit.lab.projects.controleHQs.infraestrutura.data.repository.ColecaoRepository
+import com.ale.devkit.lab.projects.controleHQs.message.producer.ColecaoProducer
 import com.opencsv.CSVWriter
 import jakarta.transaction.Transactional
 import org.slf4j.LoggerFactory
@@ -21,36 +22,29 @@ import java.time.format.DateTimeFormatter
 
 @Service
 class PublicacaoService(
-    private val repository: PublicacaoRepository,
-    private val producer: PublicacaoProducer
+    private val repository: ColecaoRepository,
+    private val producer: ColecaoProducer
 ) {
 
     private val log = LoggerFactory.getLogger(PublicacaoService::class.java)
 
     @Transactional
-    fun adicionaColecao(request: ColecaoRequest ): PublicacaoEntity {
-
-        log.info("Iniciando cadastro de Publicacao: titulo='{}'", request.titulo)
-
+    fun adicionaColecao(request: ColecaoRequest ): ColecaoEntity {
+        log.info("Iniciando cadastro de Colecao: titulo='{}'", request.titulo)
 
         try {
-
             // Idempotência: verifica ISBN duplicado
-            if (request.isbn != null) {
-                val existente = repository.findByIsbn(request.isbn)
-                if (existente != null) {
-                    log.warn("Publicacao já cadastrada com ISBN '{}': id='{}'", request.isbn, existente.id)
-                    return existente
-                }
+            repository.findByIsbn(request.isbn)?.let { existente ->
+                log.warn("Colecao já cadastrada com ISBN '{}': id='{}'", request.isbn, existente.id)
+                throw Exception("Colecao já cadastrada com isbn=${request.isbn}")
             }
 
-            val entity = PublicacaoEntity(
+            val entity = ColecaoEntity(
                 titulo = request.titulo,
                 categoria = request.categoria,
                 editora = request.editora,
                 volume = request.volume,
                 preco = request.preco,
-                condicao = null,
                 status = request.status,
                 isbn = request.isbn,
                 dataCadastro = LocalDate.now(),
@@ -63,7 +57,7 @@ class PublicacaoService(
 
             val saved = repository.save(entity)
 
-            log.info("Publicacao salva com sucesso: id='{}', titulo='{}'", saved.id, saved.titulo)
+            log.info("Colecao salva com sucesso: id='{}', titulo='{}'", saved.id, saved.titulo)
 
             val message = ColecaoMessage(
                 id = saved.id!!,
@@ -82,18 +76,18 @@ class PublicacaoService(
 
         } catch (ex: Exception) {
             log.error(
-                "Erro ao salvar Publicacao: titulo='{}', erro='{}'",
+                "Erro ao salvar Colecao: titulo='{}', erro='{}'",
                 request.titulo,
                 ex.message,
                 ex
             )
 
-            throw RuntimeException("Erro ao cadastrar Publicacao")
+            throw RuntimeException("Erro ao cadastrar Colecao")
         }
     }
 
     fun exportarCsv() {
-        val caminho = "data/livros.csv"  // relativo à raiz do projeto
+        val caminho = "data/livros.csv"
         val livros = repository.findAll()
 
         val file = File(caminho)
@@ -110,7 +104,7 @@ class PublicacaoService(
 
         writer.writeNext(arrayOf(
             "ID", "Título", "Categoria", "Editora", "Volume",
-            "Preço", "Condição", "Status", "ISBN", "Data Cadastro", "Caixa"
+            "Preço", "Status", "ISBN", "Data Cadastro", "Caixa"
         ))
 
         livros.forEach { livro ->
@@ -121,7 +115,6 @@ class PublicacaoService(
                 livro.editora ?: "",
                 livro.volume?.toString() ?: "",
                 livro.preco?.let { "%.2f".format(it).replace('.', ',') } ?: "",
-                livro.condicao ?: "",
                 livro.status?.name ?: "",
                 livro.isbn ?: "",
                 livro.dataCadastro.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")),
@@ -136,7 +129,7 @@ class PublicacaoService(
     fun buscarColecao(isbn: String): ColecaoResponse {
 
         val entity = repository.findByIsbn(isbn)
-            ?: throw RuntimeException("Publicacao não encontrada para isbn=$isbn")
+            ?: throw RuntimeException("Colecao não encontrada para isbn=$isbn")
 
         return ColecaoResponse(
             id = entity.id!!,
@@ -147,7 +140,6 @@ class PublicacaoService(
             autors = entity.autors,
             volume = entity.volume,
             preco = entity.preco,
-            condicao = entity.condicao,
             status = entity.status,
             dataCadastro = entity.dataCadastro,
             dataPublicacao = entity.dataPublicacao,
@@ -155,4 +147,26 @@ class PublicacaoService(
             caixa = entity.caixa
         )
     }
+
+    @Transactional // Garante que o find e o save acontecem na mesma transação
+    fun atualizarColecao(isbn: String, colecao: ColecaoAtualizaRequest): ColecaoResponse{
+        val entity = repository.findByIsbn(isbn)
+            ?: throw RuntimeException("Colecao não encontrada para o isbn=$isbn")
+
+        val atualizado = entity.copy(
+            titulo = colecao.titulo ?: entity.titulo,
+            categoria = colecao.categoria ?: entity.categoria,
+            editora = colecao.editora ?: entity.editora,
+            volume = colecao.volume ?: entity.volume,
+            preco = colecao.preco ?: entity.preco,
+            dataPublicacao = colecao.dataPublicacao ?: entity.dataPublicacao,
+            numeroPaginas = colecao.numeroPaginas ?: entity.numeroPaginas,
+            caixa = colecao.caixa ?: entity.caixa,
+            status = colecao.status ?: entity.status
+        )
+
+        val salvo = repository.save(atualizado)
+        return ColecaoResponse.from(salvo)
+    }
+
 }

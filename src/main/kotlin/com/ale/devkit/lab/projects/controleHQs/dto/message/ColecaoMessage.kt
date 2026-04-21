@@ -1,4 +1,4 @@
-package com.ale.devkit.lab.projects.controleHQs.dto
+package com.ale.devkit.lab.projects.controleHQs.dto.message
 
 data class ColecaoMessage(
     val id: Long,

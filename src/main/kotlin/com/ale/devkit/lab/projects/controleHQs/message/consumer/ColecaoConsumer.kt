@@ -1,9 +1,8 @@
 package com.ale.devkit.lab.projects.controleHQs.message.consumer
 
-import com.ale.devkit.lab.projects.controleHQs.data.PublicacaoRepository
-import com.ale.devkit.lab.projects.controleHQs.dto.ColecaoMessage
-
-import com.ale.devkit.lab.projects.controleHQs.integrations.OpenLibraryClient
+import com.ale.devkit.lab.projects.controleHQs.dto.message.ColecaoMessage
+import com.ale.devkit.lab.projects.controleHQs.infraestrutura.data.repository.ColecaoRepository
+import com.ale.devkit.lab.projects.controleHQs.infraestrutura.integration.OpenLibraryClient
 import org.slf4j.LoggerFactory
 import org.springframework.amqp.rabbit.annotation.RabbitListener
 import org.springframework.stereotype.Component
@@ -14,7 +13,7 @@ import java.util.Locale
 
 @Component
 class PublicacaoConsumer(
-    private val repository: PublicacaoRepository,
+    private val repository: ColecaoRepository,
     private val openLibraryClient: OpenLibraryClient
 ) {
 
@@ -37,7 +36,7 @@ class PublicacaoConsumer(
 
             // Só atualiza se tiver dado (não sobrescreve com null)
             val enriched = entity.copy(
-                autors = dados?.autor ?: entity.autors,
+                autors = dados?.autor ?: dados?.autor,
                 editora = dados?.editora ?: entity.editora,
                 numeroPaginas = dados?.numeroPaginas ?: entity.numeroPaginas,
                 dataPublicacao = dados?.dataPublicacao

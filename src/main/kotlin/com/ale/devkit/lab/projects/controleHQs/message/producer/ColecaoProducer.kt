@@ -1,16 +1,16 @@
 package com.ale.devkit.lab.projects.controleHQs.message.producer
 
-import com.ale.devkit.lab.projects.controleHQs.dto.ColecaoMessage
+import com.ale.devkit.lab.projects.controleHQs.dto.message.ColecaoMessage
 import org.slf4j.LoggerFactory
 import org.springframework.amqp.rabbit.core.RabbitTemplate
 import org.springframework.stereotype.Component
 
 @Component
-class PublicacaoProducer(
+class ColecaoProducer(
     private val rabbitTemplate: RabbitTemplate
 ) {
 
-    private val log = LoggerFactory.getLogger(PublicacaoProducer::class.java)
+    private val log = LoggerFactory.getLogger(ColecaoProducer::class.java)
 
     fun enviarMsgParaFila(message: ColecaoMessage) {
 

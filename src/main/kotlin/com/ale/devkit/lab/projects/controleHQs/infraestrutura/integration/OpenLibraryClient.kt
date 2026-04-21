@@ -1,6 +1,6 @@
-package com.ale.devkit.lab.projects.controleHQs.integrations
+package com.ale.devkit.lab.projects.controleHQs.infraestrutura.integration
 
-import com.ale.devkit.lab.projects.controleHQs.dto.ColecaoDetalhes
+import com.ale.devkit.lab.projects.controleHQs.dto.api.ColecaoDetalhes
 import com.fasterxml.jackson.databind.ObjectMapper
 import org.springframework.stereotype.Component
 import org.springframework.web.client.RestClient
