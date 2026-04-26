@@ -3,7 +3,10 @@ package com.ale.devkit.lab.projects.controleHQs.service
 import com.ale.devkit.lab.projects.controleHQs.controller.request.ColecaoAtualizaRequest
 import com.ale.devkit.lab.projects.controleHQs.controller.request.ColecaoRequest
 import com.ale.devkit.lab.projects.controleHQs.controller.response.ColecaoResponse
+import com.ale.devkit.lab.projects.controleHQs.dto.api.enums.RegistroResultado
+import com.ale.devkit.lab.projects.controleHQs.dto.api.enums.Status
 import com.ale.devkit.lab.projects.controleHQs.dto.api.enums.StatusIntegracao
+import com.ale.devkit.lab.projects.controleHQs.dto.import.ImportacaoResult
 import com.ale.devkit.lab.projects.controleHQs.dto.message.ColecaoMessage
 import com.ale.devkit.lab.projects.controleHQs.infraestrutura.data.entity.ColecaoEntity
 import com.ale.devkit.lab.projects.controleHQs.infraestrutura.data.repository.ColecaoRepository
@@ -14,6 +17,7 @@ import org.slf4j.LoggerFactory
 import org.springframework.stereotype.Service
 import org.springframework.transaction.support.TransactionSynchronization
 import org.springframework.transaction.support.TransactionSynchronizationManager
+import org.springframework.web.multipart.MultipartFile
 import java.io.File
 import java.io.FileOutputStream
 import java.io.OutputStreamWriter
@@ -24,7 +28,8 @@ import java.time.format.DateTimeFormatter
 @Service
 class PublicacaoService(
     private val repository: ColecaoRepository,
-    private val producer: ColecaoProducer
+    private val producer: ColecaoProducer,
+    private val importService: ColecaoImportarService
 ) {
 
     private val log = LoggerFactory.getLogger(PublicacaoService::class.java)
@@ -90,8 +95,10 @@ class PublicacaoService(
     }
 
     fun exportarCsv() {
+        log.info("Iniciando exportacao csv da base de Colecao")
+
         val caminho = "data/livros.csv"
-        val livros = repository.findAll()
+        val publicacoes = repository.findAll()
 
         val file = File(caminho)
         val writer = CSVWriter(
@@ -106,27 +113,34 @@ class PublicacaoService(
         )
 
         writer.writeNext(arrayOf(
-            "ID", "Título", "Categoria", "Editora", "Volume",
-            "Preço", "Status", "ISBN", "Data Cadastro", "Caixa"
+            "ID", "ISBN", "Título", "Categoria", "Autor", "Editora", "Volume",
+            "Núm. Páginas", "Caixa", "Preço", "Status", "Status Integração",
+            "Data Cadastro", "Data Publicação"
         ))
 
-        livros.forEach { livro ->
+        publicacoes.forEach { livro ->
             writer.writeNext(arrayOf(
-                livro.id?.toString() ?: "",
-                livro.titulo,
-                livro.categoria,
-                livro.editora ?: "",
-                livro.volume?.toString() ?: "",
-                livro.preco?.let { "%.2f".format(it).replace('.', ',') } ?: "",
-                livro.status?.name ?: "",
-                livro.isbn ?: "",
-                livro.dataCadastro.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")),
-                livro.caixa?.toString() ?: ""
+                livro.id?.toString() ?: "",                                                          // 0
+                livro.isbn,                                                                          // 1
+                livro.titulo,                                                                        // 2
+                livro.categoria,                                                                     // 3
+                livro.autors ?: "",                                                                  // 4
+                livro.editora ?: "",                                                                 // 5
+                livro.volume?.toString() ?: "",                                                      // 6
+                livro.numeroPaginas?.toString() ?: "",                                               // 7
+                livro.caixa?.toString() ?: "",                                                       // 8
+                livro.preco?.let { "%.2f".format(it).replace('.', ',') } ?: "",                      // 9
+                livro.status?.name ?: "",                                                            // 10
+                livro.statusIntegracao?.name ?: "",                                                  // 11
+                livro.dataCadastro.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")),                // 12
+                livro.dataPublicacao?.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")) ?: ""        // 13
             ))
         }
 
         writer.flush()
         writer.close()
+
+        log.info("Exportado com sucesso")
     }
 
     fun buscarColecao(isbn: String): ColecaoResponse {
@@ -170,6 +184,39 @@ class PublicacaoService(
 
         val salvo = repository.save(atualizado)
         return ColecaoResponse.from(salvo)
+    }
+
+    fun importarCsv(file: MultipartFile): ImportacaoResult {
+        log.info("Iniciando exportacao csv da base de Colecao")
+
+        var total = 0
+        var inseridos = 0
+        var ignorados = 0
+        val erros = mutableListOf<String>()
+
+        file.inputStream
+            .bufferedReader()
+            .lineSequence()
+            .drop(1)
+            .filter { it.isNotBlank() }
+            .forEach { linha ->
+                total++
+                try {
+                    importService.salvarRegistro(linha).also { resultado ->
+                        when (resultado) {
+                            RegistroResultado.INSERIDO -> inseridos++
+                            RegistroResultado.IGNORADO -> ignorados++
+                        }
+                    }
+                } catch (ex: Exception) {
+                    log.error("Erro ao processar linha {}: '{}'", total, linha, ex)
+                    erros.add("Linha $total: ${ex.message}")
+                }
+            }
+
+        log.info("Import finalizado: total={}, inseridos={}, ignorados={}, erros={}", total, inseridos, ignorados, erros.size)
+
+        return ImportacaoResult(total, inseridos, ignorados, erros)
     }
 
 }
