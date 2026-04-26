@@ -3,6 +3,7 @@ package com.ale.devkit.lab.projects.controleHQs.service
 import com.ale.devkit.lab.projects.controleHQs.controller.request.ColecaoAtualizaRequest
 import com.ale.devkit.lab.projects.controleHQs.controller.request.ColecaoRequest
 import com.ale.devkit.lab.projects.controleHQs.controller.response.ColecaoResponse
+import com.ale.devkit.lab.projects.controleHQs.dto.api.enums.StatusIntegracao
 import com.ale.devkit.lab.projects.controleHQs.dto.message.ColecaoMessage
 import com.ale.devkit.lab.projects.controleHQs.infraestrutura.data.entity.ColecaoEntity
 import com.ale.devkit.lab.projects.controleHQs.infraestrutura.data.repository.ColecaoRepository
@@ -34,9 +35,9 @@ class PublicacaoService(
 
         try {
             // Idempotência: verifica ISBN duplicado
-            repository.findByIsbn(request.isbn)?.let { existente ->
+            repository.findByIsbn(request.isbn!!)?.let { existente ->
                 log.warn("Colecao já cadastrada com ISBN '{}': id='{}'", request.isbn, existente.id)
-                throw Exception("Colecao já cadastrada com isbn=${request.isbn}")
+                throw Exception("Colecao já cadastrada com isbn= ${request.isbn}")
             }
 
             val entity = ColecaoEntity(
@@ -46,12 +47,13 @@ class PublicacaoService(
                 volume = request.volume,
                 preco = request.preco,
                 status = request.status,
+                statusIntegracao = StatusIntegracao.PENDENTE,
                 isbn = request.isbn,
                 dataCadastro = LocalDate.now(),
                 id = null,
                 caixa = request.caixa,
                 numeroPaginas = null,
-                autors = null,
+                autors = request.autor,
                 dataPublicacao = null
             )
 
@@ -61,7 +63,8 @@ class PublicacaoService(
 
             val message = ColecaoMessage(
                 id = saved.id!!,
-                titulo = saved.titulo
+                titulo = saved.titulo,
+                isbn = saved.isbn
             )
 
             TransactionSynchronizationManager.registerSynchronization(

@@ -16,7 +16,8 @@ class ColecaoProducer(
 
         log.info("Enviando mensagem para fila: id='{}', titulo='{}'",
             message.id,
-            message.titulo
+            message.titulo,
+            message.isbn
         )
 
         try {

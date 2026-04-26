@@ -4,7 +4,8 @@ import com.ale.devkit.lab.projects.controleHQs.dto.api.enums.Status
 
 data class ColecaoRequest (
     val titulo: String,
-    val isbn: String,
+    val autor: String?,
+    val isbn: String?,
     val categoria: String,
     val editora: String?,
     val volume: Int?,

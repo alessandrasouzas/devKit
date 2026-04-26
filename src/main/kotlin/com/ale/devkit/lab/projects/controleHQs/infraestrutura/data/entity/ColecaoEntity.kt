@@ -1,7 +1,7 @@
 package com.ale.devkit.lab.projects.controleHQs.infraestrutura.data.entity
 
 import com.ale.devkit.lab.projects.controleHQs.dto.api.enums.Status
-import jakarta.persistence.Column
+import com.ale.devkit.lab.projects.controleHQs.dto.api.enums.StatusIntegracao
 import jakarta.persistence.Entity
 import jakarta.persistence.EnumType
 import jakarta.persistence.Enumerated
@@ -27,6 +27,8 @@ data class ColecaoEntity(
     val preco: Double? = null,
     @Enumerated(EnumType.STRING)
     val status: Status? = null,
+    @Enumerated(EnumType.STRING)
+    var statusIntegracao: StatusIntegracao? = null,
     val dataCadastro: LocalDate = LocalDate.now(),
     val dataPublicacao: LocalDate? = null,
     val numeroPaginas: Int? = null,

@@ -1,0 +1,6 @@
+2026-04-26T17:56:56.559113800 | isbn=9788583621508 | motivo=ISBN não encontrado na OpenLibrary
+2026-04-26T17:57:51.872613800 | isbn=9788583621508 | motivo=ISBN não encontrado na OpenLibrary
+2026-04-26T18:04:26.563107100 | isbn=9788583621508 | motivo=ISBN não encontrado na OpenLibrary
+2026-04-26T18:08:02.912000700 | isbn=9788583621508 | motivo=ISBN não encontrado na OpenLibrary
+2026-04-26T18:13:55.532994400 | isbn=9788583621508 | motivo=ISBN não encontrado na OpenLibrary
+2026-04-26T18:16:12.938754800 | isbn=9788583621508 | motivo=ISBN não encontrado na OpenLibrary

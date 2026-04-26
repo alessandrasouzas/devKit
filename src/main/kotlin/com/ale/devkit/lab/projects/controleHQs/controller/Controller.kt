@@ -35,7 +35,7 @@ class Controller (
         } catch (ex: Exception) {
             ResponseEntity
                 .status(HttpStatus.BAD_REQUEST)
-                .body(mapOf("erro" to ex.message))
+                .body(mapOf("Erro ao add colecao!" to ex.message))
         }
     }
 
