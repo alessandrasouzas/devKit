@@ -33,7 +33,27 @@ class ColecaoImportarService (
 
         val existente = repository.findByIsbn(isbn)
         if (existente != null) {
-            log.warn("ISBN '{}' já existe, pulando...", isbn)
+            val atualizado = existente.copy(
+                titulo = campos[2].trim().removeSurrounding("\"").ifBlank { existente.titulo },
+                categoria = campos[3].trim().removeSurrounding("\"").ifBlank { existente.categoria },
+                autors = campos.getOrNull(4)?.trimOrNull() ?: existente.autors,
+                editora = campos.getOrNull(5)?.trimOrNull() ?: existente.editora,
+                volume = campos.getOrNull(6)?.trimOrNull()?.toIntOrNull() ?: existente.volume,
+                numeroPaginas = campos.getOrNull(7)?.trimOrNull()?.toIntOrNull() ?: existente.numeroPaginas,
+                caixa = campos.getOrNull(8)?.trimOrNull()?.toIntOrNull() ?: existente.caixa,
+                preco = campos.getOrNull(9)?.trimOrNull()?.replace(',', '.')?.toDoubleOrNull() ?: existente.preco,
+                status = campos.getOrNull(10)?.trimOrNull()
+                    ?.let { runCatching { Status.valueOf(it) }.getOrNull() } ?: existente.status,
+                emprestadoPara = campos.getOrNull(14)?.trimOrNull() ?: existente.emprestadoPara
+            )
+
+            if (atualizado != existente) {
+                repository.save(atualizado)
+                log.info("ISBN '{}' atualizado via import", isbn)
+                return RegistroResultado.ATUALIZADO
+            }
+
+            log.info("ISBN '{}' já existe e sem alterações, pulando...", isbn)
             return RegistroResultado.IGNORADO
         }
 
@@ -53,7 +73,8 @@ class ColecaoImportarService (
                 ?.let { runCatching { StatusIntegracao.valueOf(it) }.getOrNull() },
             dataCadastro = LocalDate.now(),
             dataPublicacao = null,
-            id = null
+            id = null,
+            emprestadoPara = campos.getOrNull(15)?.trimOrNull()?.toString()
         )
 
         val saved = repository.save(entity)

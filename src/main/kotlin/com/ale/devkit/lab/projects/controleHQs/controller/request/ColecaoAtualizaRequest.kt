@@ -12,5 +12,6 @@ data class ColecaoAtualizaRequest(
     val dataPublicacao: LocalDate?,
     val numeroPaginas: Int?,
     val caixa: Int?,
-    val status: Status?
+    val status: Status?,
+    val emprestadoPara: String?
 )

@@ -4,16 +4,18 @@ import com.ale.devkit.lab.projects.controleHQs.controller.request.ColecaoAtualiz
 import com.ale.devkit.lab.projects.controleHQs.controller.request.ColecaoRequest
 import com.ale.devkit.lab.projects.controleHQs.controller.response.ColecaoResponse
 import com.ale.devkit.lab.projects.controleHQs.dto.api.enums.RegistroResultado
-import com.ale.devkit.lab.projects.controleHQs.dto.api.enums.Status
 import com.ale.devkit.lab.projects.controleHQs.dto.api.enums.StatusIntegracao
 import com.ale.devkit.lab.projects.controleHQs.dto.import.ImportacaoResult
 import com.ale.devkit.lab.projects.controleHQs.dto.message.ColecaoMessage
 import com.ale.devkit.lab.projects.controleHQs.infraestrutura.data.entity.ColecaoEntity
+import com.ale.devkit.lab.projects.controleHQs.infraestrutura.data.entity.ColecaoProjection
 import com.ale.devkit.lab.projects.controleHQs.infraestrutura.data.repository.ColecaoRepository
 import com.ale.devkit.lab.projects.controleHQs.message.producer.ColecaoProducer
 import com.opencsv.CSVWriter
-import jakarta.transaction.Transactional
+import org.springframework.transaction.annotation.Transactional
 import org.slf4j.LoggerFactory
+import org.springframework.data.domain.Page
+import org.springframework.data.domain.Pageable
 import org.springframework.stereotype.Service
 import org.springframework.transaction.support.TransactionSynchronization
 import org.springframework.transaction.support.TransactionSynchronizationManager
@@ -115,32 +117,33 @@ class PublicacaoService(
         writer.writeNext(arrayOf(
             "ID", "ISBN", "Título", "Categoria", "Autor", "Editora", "Volume",
             "Núm. Páginas", "Caixa", "Preço", "Status", "Status Integração",
-            "Data Cadastro", "Data Publicação"
+            "Data Cadastro", "Data Publicação","Emprestado Para"
         ))
 
-        publicacoes.forEach { livro ->
+        publicacoes.forEach { publicacao ->
             writer.writeNext(arrayOf(
-                livro.id?.toString() ?: "",                                                          // 0
-                livro.isbn,                                                                          // 1
-                livro.titulo,                                                                        // 2
-                livro.categoria,                                                                     // 3
-                livro.autors ?: "",                                                                  // 4
-                livro.editora ?: "",                                                                 // 5
-                livro.volume?.toString() ?: "",                                                      // 6
-                livro.numeroPaginas?.toString() ?: "",                                               // 7
-                livro.caixa?.toString() ?: "",                                                       // 8
-                livro.preco?.let { "%.2f".format(it).replace('.', ',') } ?: "",                      // 9
-                livro.status?.name ?: "",                                                            // 10
-                livro.statusIntegracao?.name ?: "",                                                  // 11
-                livro.dataCadastro.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")),                // 12
-                livro.dataPublicacao?.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")) ?: ""        // 13
+                publicacao.id?.toString() ?: "",                                                          // 0
+                publicacao.isbn,                                                                          // 1
+                publicacao.titulo,                                                                        // 2
+                publicacao.categoria,                                                                     // 3
+                publicacao.autors ?: "",                                                                  // 4
+                publicacao.editora ?: "",                                                                 // 5
+                publicacao.volume?.toString() ?: "",                                                      // 6
+                publicacao.numeroPaginas?.toString() ?: "",                                               // 7
+                publicacao.caixa?.toString() ?: "",                                                       // 8
+                publicacao.preco?.let { "%.2f".format(it).replace('.', ',') } ?: "",                      // 9
+                publicacao.status?.name ?: "",                                                            // 10
+                publicacao.statusIntegracao?.name ?: "",                                                  // 11
+                publicacao.dataCadastro.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")),                // 12
+                publicacao.dataPublicacao?.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")) ?: "",       // 13
+                publicacao.emprestadoPara?.toString() ?: ""                                               // 14
             ))
         }
 
         writer.flush()
         writer.close()
 
-        log.info("Exportado com sucesso")
+        log.info("Exportado com sucesso!")
     }
 
     fun buscarColecao(isbn: String): ColecaoResponse {
@@ -161,7 +164,8 @@ class PublicacaoService(
             dataCadastro = entity.dataCadastro,
             dataPublicacao = entity.dataPublicacao,
             numeroPaginas = entity.numeroPaginas,
-            caixa = entity.caixa
+            caixa = entity.caixa,
+            emprestadoPara = entity.emprestadoPara
         )
     }
 
@@ -179,7 +183,8 @@ class PublicacaoService(
             dataPublicacao = colecao.dataPublicacao ?: entity.dataPublicacao,
             numeroPaginas = colecao.numeroPaginas ?: entity.numeroPaginas,
             caixa = colecao.caixa ?: entity.caixa,
-            status = colecao.status ?: entity.status
+            status = colecao.status ?: entity.status,
+            emprestadoPara = colecao.emprestadoPara ?: entity.emprestadoPara
         )
 
         val salvo = repository.save(atualizado)
@@ -192,6 +197,7 @@ class PublicacaoService(
         var total = 0
         var inseridos = 0
         var ignorados = 0
+        var atualizados = 0
         val erros = mutableListOf<String>()
 
         file.inputStream
@@ -206,6 +212,7 @@ class PublicacaoService(
                         when (resultado) {
                             RegistroResultado.INSERIDO -> inseridos++
                             RegistroResultado.IGNORADO -> ignorados++
+                            RegistroResultado.ATUALIZADO -> atualizados++
                         }
                     }
                 } catch (ex: Exception) {
@@ -214,9 +221,14 @@ class PublicacaoService(
                 }
             }
 
-        log.info("Import finalizado: total={}, inseridos={}, ignorados={}, erros={}", total, inseridos, ignorados, erros.size)
+        log.info("Import finalizado: total={}, inseridos={}, atualizados={}, ignorados={}, erros={}", total, inseridos, atualizados, ignorados, erros.size)
 
-        return ImportacaoResult(total, inseridos, ignorados, erros)
+        return ImportacaoResult(total, inseridos, atualizados, ignorados, erros)
     }
 
+
+    @Transactional(readOnly = true)
+    fun listarColecao(pageable: Pageable): Page<ColecaoProjection> {
+        return repository.findAllProjectedBy(pageable)
+    }
 }

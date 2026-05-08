@@ -17,7 +17,8 @@ data class ColecaoResponse(
     val dataCadastro: LocalDate,
     val dataPublicacao: LocalDate?,
     val numeroPaginas: Int?,
-    val caixa: Int?
+    val caixa: Int?,
+    val emprestadoPara: String?
 ) {
     companion object {
         fun from(entity: ColecaoEntity) = ColecaoResponse(
@@ -33,7 +34,8 @@ data class ColecaoResponse(
             dataCadastro = entity.dataCadastro,
             dataPublicacao = entity.dataPublicacao,
             numeroPaginas = entity.numeroPaginas,
-            caixa = entity.caixa
+            caixa = entity.caixa,
+            emprestadoPara = entity.emprestadoPara
         )
     }
 }

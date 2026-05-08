@@ -57,11 +57,10 @@ class PublicacaoConsumer(
                 dataPublicacao = dados?.dataPublicacao
                     ?.let { parseDate(it) }
                     ?: entity.dataPublicacao,
-                statusIntegracao = StatusIntegracao.PROCESSANDO
+                statusIntegracao = StatusIntegracao.ENRIQUECIDO
             )
 
             if (enriched != entity) {
-                entity.statusIntegracao = StatusIntegracao.ENRIQUECIDO
                 repository.save(enriched)
                 log.info("Publicacao enriquecida com sucesso: id='{}'", enriched.id)
             }

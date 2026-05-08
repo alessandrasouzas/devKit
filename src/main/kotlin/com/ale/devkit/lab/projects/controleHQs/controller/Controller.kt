@@ -4,7 +4,10 @@ import com.ale.devkit.lab.projects.controleHQs.controller.request.ColecaoRequest
 import com.ale.devkit.lab.projects.controleHQs.controller.request.ColecaoAtualizaRequest
 import com.ale.devkit.lab.projects.controleHQs.controller.response.ColecaoResponse
 import com.ale.devkit.lab.projects.controleHQs.dto.import.ImportacaoResult
+import com.ale.devkit.lab.projects.controleHQs.infraestrutura.data.entity.ColecaoProjection
 import com.ale.devkit.lab.projects.controleHQs.service.PublicacaoService
+import org.springframework.data.domain.Page
+import org.springframework.data.domain.PageRequest
 import org.springframework.http.HttpStatus
 import org.springframework.http.MediaType
 import org.springframework.http.ResponseEntity
@@ -63,7 +66,6 @@ class Controller (
             .body("Exportado com Sucesso!")
     }
 
-    //import csv
     @PostMapping("/importar-csv", consumes = [MediaType.MULTIPART_FORM_DATA_VALUE])
     fun importarCsv(
         @RequestParam("file") file: MultipartFile
@@ -72,8 +74,15 @@ class Controller (
         return ResponseEntity.ok(resultado)
     }
 
-    //deletar by isbn
+    @GetMapping
+    fun listarColecao(
+        @RequestParam(defaultValue = "0") page: Int,
+        @RequestParam(defaultValue = "20") size: Int
+    ): ResponseEntity<Page<ColecaoProjection>> {
+        val pageable = PageRequest.of(page, size)
+        return ResponseEntity.ok(service.listarColecao(pageable))
+    }
 
-    //consultar todos
+    //deletar by isbn
 
 }

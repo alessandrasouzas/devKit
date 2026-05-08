@@ -19,10 +19,10 @@ data class ColecaoEntity(
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long? = null,
     val isbn: String = "",
-    val titulo: String = "",
-    val categoria: String = "",
-    val editora: String? = null,
-    val autors: String? = null,
+    var titulo: String = "",
+    var categoria: String = "",
+    var editora: String? = null,
+    var autors: String? = null,
     val volume: Int? = null,
     val preco: Double? = null,
     @Enumerated(EnumType.STRING)
@@ -32,6 +32,19 @@ data class ColecaoEntity(
     val dataCadastro: LocalDate = LocalDate.now(),
     val dataPublicacao: LocalDate? = null,
     val numeroPaginas: Int? = null,
-    val caixa: Int? = null
+    val caixa: Int? = null,
+    val emprestadoPara: String? = null
+) {
 
-)
+    init {
+        titulo = titulo.trim().capitalizeWords()
+        categoria = categoria.trim().uppercase()
+        editora = editora?.trim()?.capitalizeWords()
+        autors = autors?.trim()?.capitalizeWords()
+    }
+}
+
+    fun String.capitalizeWords(): String =
+        split(" ").joinToString(" ") { word ->
+            word.lowercase().replaceFirstChar { it.uppercaseChar() }
+    }
