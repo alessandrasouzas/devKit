@@ -26,39 +26,45 @@ class ColecaoImportarService (
     @Transactional
     fun salvarRegistro(linha: String): RegistroResultado {
         val campos = linha.split(";")
+        log.info("Linha {}: {} campos -> {}", linha, campos.size, campos)
 
         if (campos.size < 4) throw IllegalArgumentException("Linha com campos insuficientes")
 
-        val isbn = campos[1].trim().removeSurrounding("\"")
+        // posição 0 = ID (ignorado), posição 1 = ISBN
+        val isbn = campos[1].trim().removeSurrounding("\"").ifBlank { null }
 
-        val existente = repository.findByIsbn(isbn)
-        if (existente != null) {
-            val atualizado = existente.copy(
-                titulo = campos[2].trim().removeSurrounding("\"").ifBlank { existente.titulo },
-                categoria = campos[3].trim().removeSurrounding("\"").ifBlank { existente.categoria },
-                autors = campos.getOrNull(4)?.trimOrNull() ?: existente.autors,
-                editora = campos.getOrNull(5)?.trimOrNull() ?: existente.editora,
-                volume = campos.getOrNull(6)?.trimOrNull()?.toIntOrNull() ?: existente.volume,
-                numeroPaginas = campos.getOrNull(7)?.trimOrNull()?.toIntOrNull() ?: existente.numeroPaginas,
-                caixa = campos.getOrNull(8)?.trimOrNull()?.toIntOrNull() ?: existente.caixa,
-                preco = campos.getOrNull(9)?.trimOrNull()?.replace(',', '.')?.toDoubleOrNull() ?: existente.preco,
-                status = campos.getOrNull(10)?.trimOrNull()
-                    ?.let { runCatching { Status.valueOf(it) }.getOrNull() } ?: existente.status,
-                emprestadoPara = campos.getOrNull(14)?.trimOrNull() ?: existente.emprestadoPara
-            )
+        // idempotência — só verifica duplicata se tiver ISBN
+        if (isbn != null) {
+            val existente = repository.findByIsbn(isbn)
+            if (existente != null) {
+                val atualizado = existente.copy(
+                    titulo = campos[2].trim().removeSurrounding("\"").ifBlank { existente.titulo },
+                    categoria = campos[3].trim().removeSurrounding("\"").ifBlank { existente.categoria },
+                    autors = campos.getOrNull(4)?.trimOrNull() ?: existente.autors,
+                    editora = campos.getOrNull(5)?.trimOrNull() ?: existente.editora,
+                    volume = campos.getOrNull(6)?.trimOrNull()?.toIntOrNull() ?: existente.volume,
+                    numeroPaginas = campos.getOrNull(7)?.trimOrNull()?.toIntOrNull() ?: existente.numeroPaginas,
+                    caixa = campos.getOrNull(8)?.trimOrNull()?.toIntOrNull() ?: existente.caixa,
+                    preco = campos.getOrNull(9)?.trimOrNull()?.replace(',', '.')?.toDoubleOrNull() ?: existente.preco,
+                    status = campos.getOrNull(10)?.trimOrNull()
+                        ?.let { runCatching { Status.valueOf(it) }.getOrNull() } ?: existente.status,
+                    emprestadoPara = campos.getOrNull(14)?.trimOrNull() ?: existente.emprestadoPara
+                )
 
-            if (atualizado != existente) {
-                repository.save(atualizado)
-                log.info("ISBN '{}' atualizado via import", isbn)
-                return RegistroResultado.ATUALIZADO
+                if (atualizado != existente) {
+                    repository.save(atualizado)
+                    log.info("ISBN '{}' atualizado via import", isbn)
+                    return RegistroResultado.ATUALIZADO
+                }
+
+                log.info("ISBN '{}' já existe e sem alterações, pulando...", isbn)
+                return RegistroResultado.IGNORADO
             }
-
-            log.info("ISBN '{}' já existe e sem alterações, pulando...", isbn)
-            return RegistroResultado.IGNORADO
         }
 
+        // sem ISBN ou ISBN novo — insere
         val entity = ColecaoEntity(
-            isbn = isbn,
+            isbn = isbn ?: "",  // entity exige string, mantém vazio se null
             titulo = campos[2].trim().removeSurrounding("\""),
             categoria = campos[3].trim().removeSurrounding("\""),
             autors = campos.getOrNull(4)?.trimOrNull(),
@@ -73,22 +79,26 @@ class ColecaoImportarService (
                 ?.let { runCatching { StatusIntegracao.valueOf(it) }.getOrNull() },
             dataCadastro = LocalDate.now(),
             dataPublicacao = null,
-            id = null,
-            emprestadoPara = campos.getOrNull(15)?.trimOrNull()?.toString()
+            emprestadoPara = campos.getOrNull(14)?.trimOrNull(),
+            id = null
         )
 
         val saved = repository.save(entity)
-        log.info("ISBN '{}' inserido com sucesso", isbn)
+        log.info("ISBN '{}' inserido com sucesso", isbn ?: "sem ISBN")
 
-        TransactionSynchronizationManager.registerSynchronization(
-            object : TransactionSynchronization {
-                override fun afterCommit() {
-                    producer.enviarMsgParaFila(
-                        ColecaoMessage(id = saved.id!!, titulo = saved.titulo, isbn = saved.isbn)
-                    )
+        if (!saved.isbn.isNullOrBlank()) {
+            TransactionSynchronizationManager.registerSynchronization(
+                object : TransactionSynchronization {
+                    override fun afterCommit() {
+                        producer.enviarMsgParaFila(
+                            ColecaoMessage(id = saved.id!!, titulo = saved.titulo, isbn = saved.isbn!!)
+                        )
+                    }
                 }
-            }
-        )
+            )
+        } else {
+            log.info("ISBN ausente para id='{}', enriquecimento ignorado", saved.id)
+        }
 
         return RegistroResultado.INSERIDO
     }

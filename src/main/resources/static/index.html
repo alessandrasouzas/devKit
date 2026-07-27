@@ -1,0 +1,102 @@
+<nav class="navbar navbar-expand navbar-dark bg-dark mb-4">
+    <div class="container">
+        <span class="navbar-brand">Controle HQs</span>
+        <div class="navbar-nav">
+            <a class="nav-link" href="/index.html">Buscar</a>
+            <a class="nav-link" href="/adicionar.html">Adicionar</a>
+        </div>
+    </div>
+</nav>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Controle HQs</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://unpkg.com/htmx.org@1.9.0"></script>
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+    <h4 class="mb-4">Buscar por ISBN</h4>
+
+    <div class="row g-2 mb-4">
+        <div class="col-auto">
+            <input id="isbnInput" type="text" class="form-control" placeholder="Digite o ISBN">
+        </div>
+        <div class="col-auto">
+            <button class="btn btn-primary"
+                    hx-get="/colecoes/isbn"
+                    hx-include="#isbnInput"
+                    hx-target="#resultado"
+                    hx-swap="innerHTML"
+                    hx-vals="js:{isbn: document.getElementById('isbnInput').value}">
+                Buscar
+            </button>
+        </div>
+    </div>
+
+    <div id="resultado"></div>
+</div>
+
+<!-- template do resultado -->
+<template id="card-template">
+    <div class="card" style="max-width: 500px">
+        <div class="card-body">
+            <h5 class="card-title" id="res-titulo"></h5>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><strong>ISBN:</strong> <span id="res-isbn"></span></li>
+                <li class="list-group-item"><strong>Categoria:</strong> <span id="res-categoria"></span></li>
+                <li class="list-group-item"><strong>Autor:</strong> <span id="res-autors"></span></li>
+                <li class="list-group-item"><strong>Editora:</strong> <span id="res-editora"></span></li>
+                <li class="list-group-item"><strong>Volume:</strong> <span id="res-volume"></span></li>
+                <li class="list-group-item"><strong>Páginas:</strong> <span id="res-numeroPaginas"></span></li>
+                <li class="list-group-item"><strong>Caixa:</strong> <span id="res-caixa"></span></li>
+                <li class="list-group-item"><strong>Preço:</strong> <span id="res-preco"></span></li>
+                <li class="list-group-item"><strong>Status:</strong> <span id="res-status"></span></li>
+            </ul>
+        </div>
+    </div>
+</template>
+
+<script>
+    document.querySelector('button').addEventListener('click', async () => {
+        const isbn = document.getElementById('isbnInput').value.trim()
+        if (!isbn) return
+
+        try {
+            const res = await fetch(`/colecoes/${isbn}`)
+            if (!res.ok) {
+                document.getElementById('resultado').innerHTML =
+                    '<div class="alert alert-warning">ISBN não encontrado.</div>'
+                return
+            }
+
+            const data = await res.json()
+            const template = document.getElementById('card-template').content.cloneNode(true)
+
+            template.getElementById('res-titulo').textContent = data.titulo ?? '-'
+            template.getElementById('res-isbn').textContent = data.isbn ?? '-'
+            template.getElementById('res-categoria').textContent = data.categoria ?? '-'
+            template.getElementById('res-autors').textContent = data.autors ?? '-'
+            template.getElementById('res-editora').textContent = data.editora ?? '-'
+            template.getElementById('res-volume').textContent = data.volume ?? '-'
+            template.getElementById('res-numeroPaginas').textContent = data.numeroPaginas ?? '-'
+            template.getElementById('res-caixa').textContent = data.caixa ?? '-'
+            template.getElementById('res-preco').textContent = data.preco ? `R$ ${data.preco.toFixed(2)}` : '-'
+            template.getElementById('res-status').textContent = data.status ?? '-'
+
+            const resultado = document.getElementById('resultado')
+            resultado.innerHTML = ''
+            resultado.appendChild(template)
+
+        } catch (e) {
+            document.getElementById('resultado').innerHTML =
+                '<div class="alert alert-danger">Erro ao buscar.</div>'
+        }
+    })
+</script>
+
+</body>
+</html>

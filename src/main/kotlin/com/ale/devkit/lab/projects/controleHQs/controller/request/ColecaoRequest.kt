@@ -11,5 +11,6 @@ data class ColecaoRequest (
     val volume: Int?,
     val preco: Double?,
     val caixa: Int?,
-    val status: Status?
+    val status: Status?,
+    val emprestadoPara: String?
 )

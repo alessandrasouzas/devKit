@@ -18,7 +18,7 @@ data class ColecaoEntity(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long? = null,
-    val isbn: String = "",
+    val isbn: String? = null,
     var titulo: String = "",
     var categoria: String = "",
     var editora: String? = null,

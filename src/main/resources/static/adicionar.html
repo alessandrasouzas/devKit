@@ -1,0 +1,168 @@
+<nav class="navbar navbar-expand navbar-dark bg-dark mb-4">
+    <div class="container">
+        <span class="navbar-brand">Controle HQs</span>
+        <div class="navbar-nav">
+            <a class="nav-link" href="/index.html">Buscar</a>
+            <a class="nav-link" href="/adicionar.html">Adicionar</a>
+        </div>
+    </div>
+</nav>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Controle HQs</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+<div class="container mt-5" style="max-width: 600px">
+    <h4 class="mb-4">Adicionar à Coleção</h4>
+
+    <div class="mb-3">
+        <label class="form-label">Título *</label>
+        <input id="titulo" type="text" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">ISBN *</label>
+        <input id="isbn" type="text" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Categoria *</label>
+        <select id="categoria" class="form-select">
+            <option value="">Selecione...</option>
+            <option value="HQ">HQ</option>
+            <option value="LIVRO">Livro</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Autor</label>
+        <input id="autor" type="text" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Editora</label>
+        <input id="editora" type="text" class="form-control">
+    </div>
+
+    <div class="row">
+        <div class="col mb-3">
+            <label class="form-label">Volume</label>
+            <input id="volume" type="number" class="form-control">
+        </div>
+        <div class="col mb-3">
+            <label class="form-label">Caixa</label>
+            <input id="caixa" type="number" class="form-control">
+        </div>
+        <div class="col mb-3">
+            <label class="form-label">Preço</label>
+            <input id="preco" type="number" step="0.01" class="form-control">
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Status</label>
+        <select id="status" class="form-select">
+            <option value="">Selecione...</option>
+            <option value="COLECAO">Disponível</option>
+            <option value="EMPRESTADO">Emprestado</option>
+            <option value="A_VENDER">À venda</option>
+            <option value="VENDIDO">Vendido</option>
+        </select>
+    </div>
+
+    <div class="mb-3" id="campoEmprestado" style="display:none">
+        <label class="form-label">Emprestado para</label>
+        <input id="emprestadoPara" type="text" class="form-control">
+    </div>
+
+    <div id="feedback"></div>
+
+    <button id="btnSalvar" class="btn btn-primary w-100 mt-2">Salvar</button>
+</div>
+
+<script>
+    // mostra campo "emprestado para" só quando status for EMPRESTADO
+    document.getElementById('status').addEventListener('change', (e) => {
+        const campoEmprestado = document.getElementById('campoEmprestado')
+        campoEmprestado.style.display = e.target.value === 'EMPRESTADO' ? 'block' : 'none'
+    })
+
+    document.getElementById('btnSalvar').addEventListener('click', async () => {
+        const titulo = document.getElementById('titulo').value.trim()
+        const categoria = document.getElementById('categoria').value
+
+        if (!titulo || !categoria) {
+            mostrarFeedback('Título e Categoria são obrigatórios.', 'warning')
+            return
+        }
+
+        const payload = {
+            titulo,
+            isbn: valorOuNull('isbn'),
+            categoria,
+            autor: valorOuNull('autor'),
+            editora: valorOuNull('editora'),
+            volume: valorIntOuNull('volume'),
+            caixa: valorIntOuNull('caixa'),
+            preco: valorFloatOuNull('preco'),
+            status: valorOuNull('status'),
+            emprestadoPara: valorOuNull('emprestadoPara')
+        }
+
+        try {
+            const res = await fetch('/colecoes', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            })
+
+            if (res.ok) {
+                mostrarFeedback('Cadastrado com sucesso!', 'success')
+                limparFormulario()
+            } else if (res.status === 409) {
+                mostrarFeedback('ISBN já cadastrado.', 'warning')
+            } else {
+                mostrarFeedback('Erro ao cadastrar.', 'danger')
+            }
+
+        } catch (e) {
+            mostrarFeedback('Erro de conexão.', 'danger')
+        }
+    })
+
+    function valorOuNull(id) {
+        const val = document.getElementById(id)?.value.trim()
+        return val || null
+    }
+
+    function valorIntOuNull(id) {
+        const val = document.getElementById(id)?.value.trim()
+        return val ? parseInt(val) : null
+    }
+
+    function valorFloatOuNull(id) {
+        const val = document.getElementById(id)?.value.trim()
+        return val ? parseFloat(val) : null
+    }
+
+    function mostrarFeedback(mensagem, tipo) {
+        document.getElementById('feedback').innerHTML =
+            `<div class="alert alert-${tipo} mt-3">${mensagem}</div>`
+    }
+
+    function limparFormulario() {
+        ['titulo', 'isbn', 'autor', 'editora', 'volume', 'caixa', 'preco', 'emprestadoPara']
+            .forEach(id => document.getElementById(id).value = '')
+        document.getElementById('categoria').value = ''
+        document.getElementById('status').value = ''
+        document.getElementById('campoEmprestado').style.display = 'none'
+    }
+</script>
+
+</body>
+</html>

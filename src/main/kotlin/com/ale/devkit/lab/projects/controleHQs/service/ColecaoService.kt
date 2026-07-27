@@ -41,10 +41,13 @@ class PublicacaoService(
         log.info("Iniciando cadastro de Colecao: titulo='{}'", request.titulo)
 
         try {
-            // Idempotência: verifica ISBN duplicado
-            repository.findByIsbn(request.isbn!!)?.let { existente ->
-                log.warn("Colecao já cadastrada com ISBN '{}': id='{}'", request.isbn, existente.id)
-                throw Exception("Colecao já cadastrada com isbn= ${request.isbn}")
+            // Idempotência: verifica ISBN duplicado apenas se vier preenchido
+            if (request.isbn != null) {
+                val existente = repository.findByIsbn(request.isbn)
+                if (existente != null) {
+                    log.warn("Colecao já cadastrada com ISBN '{}': id='{}'", request.isbn, existente.id)
+                    throw Exception("Colecao já cadastrada com isbn= ${request.isbn}")
+                }
             }
 
             val entity = ColecaoEntity(
@@ -61,27 +64,30 @@ class PublicacaoService(
                 caixa = request.caixa,
                 numeroPaginas = null,
                 autors = request.autor,
-                dataPublicacao = null
+                dataPublicacao = null,
+                emprestadoPara = request.emprestadoPara
             )
 
             val saved = repository.save(entity)
-
             log.info("Colecao salva com sucesso: id='{}', titulo='{}'", saved.id, saved.titulo)
 
-            val message = ColecaoMessage(
-                id = saved.id!!,
-                titulo = saved.titulo,
-                isbn = saved.isbn
-            )
+            if (saved.isbn != null) {
+                val message = ColecaoMessage(
+                    id = saved.id!!,
+                    titulo = saved.titulo,
+                    isbn = saved.isbn!!
+                )
 
-            TransactionSynchronizationManager.registerSynchronization(
-                object : TransactionSynchronization {
-                    override fun afterCommit() {
-                        producer.enviarMsgParaFila(message)
+                TransactionSynchronizationManager.registerSynchronization(
+                    object : TransactionSynchronization {
+                        override fun afterCommit() {
+                            producer.enviarMsgParaFila(message)
+                        }
                     }
-                }
-            )
-
+                )
+            } else {
+                log.info("ISBN ausente para id='{}', enriquecimento ignorado", saved.id)
+            }
             return saved
 
         } catch (ex: Exception) {
@@ -99,7 +105,7 @@ class PublicacaoService(
     fun exportarCsv() {
         log.info("Iniciando exportacao csv da base de Colecao")
 
-        val caminho = "data/livros.csv"
+        val caminho = "data/colecao.csv"
         val publicacoes = repository.findAll()
 
         val file = File(caminho)
@@ -200,9 +206,13 @@ class PublicacaoService(
         var atualizados = 0
         val erros = mutableListOf<String>()
 
-        file.inputStream
+        val linhas = file.inputStream
             .bufferedReader()
-            .lineSequence()
+            .readLines()
+
+        log.info("Total de linhas no arquivo: {}", linhas.size)
+
+        linhas
             .drop(1)
             .filter { it.isNotBlank() }
             .forEach { linha ->

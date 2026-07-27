@@ -7,7 +7,7 @@ import java.time.LocalDate
 data class ColecaoResponse(
     val id: Long?,
     val titulo: String,
-    val isbn: String,
+    val isbn: String?,
     val categoria: String,
     val editora: String?,
     val autors: String?,  // adiciona
